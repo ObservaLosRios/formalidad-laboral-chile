@@ -1,0 +1,14 @@
+{
+  "timestamp": "20250813_162849",
+  "seed": 42,
+  "datasets_cargados": [
+    "INF_OI_CHL14_clean.csv",
+    "INF_TOSI_CHL14_clean.csv",
+    "INF_NOAGRO_CHL14_clean.csv"
+  ],
+  "filas_merged": 243,
+  "columnas_merged": 5,
+  "nuevas_columnas_feature_engineering": [],
+  "artefactos": {},
+  "sklearn_disponible": true
+}

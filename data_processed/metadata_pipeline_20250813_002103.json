@@ -1,0 +1,23 @@
+{
+  "pipeline_version": "2.0_senior",
+  "fecha_procesamiento": "2025-08-13T00:21:03.983665",
+  "region": "Los Ríos (CHL14)",
+  "periodo_datos": "2017-2024",
+  "transformaciones_aplicadas": [
+    "Ocupados informales: miles → personas (x1000)",
+    "Tasas: redondeo a 1 decimal",
+    "Ordenamiento temporal para visualizaciones",
+    "Validación de tipos de datos"
+  ],
+  "archivos_generados": [
+    "etl_ocupados_informales_chl14.csv",
+    "etl_tasa_ocupacion_informal_chl14.csv",
+    "etl_tasa_ocupacion_noagro_chl14.csv",
+    "quality_report_chl14_20250813_002103.csv"
+  ],
+  "estadisticas_principales": {
+    "ocupados_informales_promedio": "63,523 personas",
+    "tasa_informalidad_promedio": "20.7%",
+    "brecha_genero": "5.0 p.p."
+  }
+}
