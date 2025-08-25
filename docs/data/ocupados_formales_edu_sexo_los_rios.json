@@ -1,0 +1,91 @@
+{
+  "region": "Los Ríos",
+  "periodo": "2024Q4",
+  "records": [
+    {
+      "nivel_educativo": "Sin educación",
+      "sexo": "Hombres",
+      "ocupados_formales": 12026,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Básica incompleta",
+      "sexo": "Hombres",
+      "ocupados_formales": 2501,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Básica completa",
+      "sexo": "Hombres",
+      "ocupados_formales": 10631,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Media incompleta",
+      "sexo": "Hombres",
+      "ocupados_formales": 13421,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Media completa",
+      "sexo": "Hombres",
+      "ocupados_formales": 11882,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Superior incompleta",
+      "sexo": "Hombres",
+      "ocupados_formales": 9505,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Superior completa",
+      "sexo": "Hombres",
+      "ocupados_formales": 4768,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Sin educación",
+      "sexo": "Mujeres",
+      "ocupados_formales": 4970,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Básica incompleta",
+      "sexo": "Mujeres",
+      "ocupados_formales": 9964,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Básica completa",
+      "sexo": "Mujeres",
+      "ocupados_formales": 6502,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Media incompleta",
+      "sexo": "Mujeres",
+      "ocupados_formales": 9190,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Media completa",
+      "sexo": "Mujeres",
+      "ocupados_formales": 3579,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Superior incompleta",
+      "sexo": "Mujeres",
+      "ocupados_formales": 8707,
+      "periodo": "2024Q4"
+    },
+    {
+      "nivel_educativo": "Superior completa",
+      "sexo": "Mujeres",
+      "ocupados_formales": 3181,
+      "periodo": "2024Q4"
+    }
+  ],
+  "units": "persons"
+}

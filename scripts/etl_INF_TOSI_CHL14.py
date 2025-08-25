@@ -6,3 +6,6 @@ output_path = 'data_clean/INF_TOSI_CHL14_clean.csv'
 df = pd.read_csv(input_path)
 df_clean = df[df['DTI_CL_REGION'] == 'CHL14']
 df_clean.to_csv(output_path, index=False)
++
+
+

@@ -1,6 +1,6 @@
-# 📊 Análisis de Informalidad Laboral - Región de Los Ríos, Chile
+# 📊 Observa CER UACh — Informalidad Laboral en Los Ríos, Chile
 
-Este proyecto presenta un análisis integral de la **informalidad laboral en la Región de Los Ríos**, Chile, utilizando datos oficiales del Instituto Nacional de Estadísticas (INE) para el período 2017-2024.
+Proyecto del observatorio Observa CER UACh que presenta un análisis integral de la **informalidad laboral en la Región de Los Ríos**, Chile, utilizando datos oficiales del Instituto Nacional de Estadísticas (INE) para el período 2017-2024.
 
 ## 🎯 Objetivo
 
@@ -21,7 +21,7 @@ El proyecto analiza tres indicadores clave:
 ## 🗂️ Estructura del Proyecto
 
 ```
-formalidad-informalidad-laboral-sector-chile/
+formalidad-laboral-chile/
 │
 ├── 📁 data/                           # Datos originales del INE
 │   ├── INF_NOAGRO_12082025235027711.csv    # Tasa informal no agropecuario
@@ -46,7 +46,12 @@ formalidad-informalidad-laboral-sector-chile/
 │
 ├── 📁 notebooks/                      # Análisis y experimentación
 │   ├── pipeline_informalidad.ipynb        # Pipeline principal de análisis
-│   └── pipeline_informalidad_01.ipynb     # Backup del notebook
+│   ├── pipeline_informalidad_01.ipynb     # Backup del notebook
+│   └── educacion_regional.ipynb           # Visualizaciones por nivel educativo (web JSON)
+│
+├── 📁 docs/                          # Dashboard web estático (Plotly.js)
+│   ├── index.html                        # Inicio (agrupa visualizaciones)
+│   └── data/                             # JSON exportados desde notebooks
 │
 ├── 📁 scripts/                        # Scripts de procesamiento ETL
 │   ├── etl_chl14.py                       # Script ETL principal
@@ -66,9 +71,9 @@ formalidad-informalidad-laboral-sector-chile/
 
 ### Instalación
 ```bash
-# Clonar el repositorio
-git clone https://github.com/SanMabruno/formalidad-informalidad-laboral-sector-chile.git
-cd formalidad-informalidad-laboral-sector-chile
+# Clonar el repositorio (organización ObservaLosRios)
+git clone https://github.com/ObservaLosRios/formalidad-laboral-chile.git
+cd formalidad-laboral-chile
 
 # Crear ambiente virtual
 python -m venv .venv
@@ -83,8 +88,17 @@ pip install -r requirements.txt
 # Ejecutar pipeline de datos (opcional)
 python scripts/etl_chl14.py
 
-# Abrir notebook principal de análisis
+# Abrir notebooks de análisis
 jupyter notebook notebooks/pipeline_informalidad.ipynb
+```
+
+### Ver el dashboard web (docs/)
+Abre `docs/index.html` en un servidor estático para ver los gráficos interactivos.
+
+Opcional (servidor local rápido):
+```bash
+python -m http.server 8000
+# luego visita http://localhost:8000/docs/
 ```
 
 ## 📊 Fuentes de Datos
@@ -109,7 +123,7 @@ Los datos provienen del **Instituto Nacional de Estadísticas (INE)** de Chile:
 ### Herramientas
 - **Git**: Control de versiones
 - **VS Code**: Editor de código
-- **GitHub**: Repositorio remoto
+- **GitHub** (ObservaLosRios): Repositorio remoto
 
 ## 📈 Características del Análisis
 
@@ -152,11 +166,12 @@ Las contribuciones son bienvenidas. Por favor:
 
 ## 👥 Autores
 
-- **Bruno San Martín** - *Desarrollo inicial* - [@SanMabruno](https://github.com/SanMabruno)
+- **Observa CER UACh** — Centro de Estudios Regionales, UACh — [@ObservaLosRios](https://github.com/ObservaLosRios)
+- **Bruno San Martín** — Desarrollo inicial — [@SanMabruno](https://github.com/SanMabruno)
 
 ## 🏛️ Institución
 
-**Universidad Austral de Chile - Centro de Estudios Regionales**
+**Observa CER UACh** — Centro de Estudios Regionales, Universidad Austral de Chile
 - Facultad de Ciencias Económicas y Administrativas
 - Región de Los Ríos, Chile
 
@@ -167,9 +182,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## 📞 Contacto
 
 Para consultas sobre el proyecto:
-- **Email**: [email@uach.cl](mailto:email@uach.cl)
-- **Institución**: Universidad Austral de Chile
-- **GitHub**: [SanMabruno](https://github.com/SanMabruno)
+- **GitHub (org)**: [ObservaLosRios](https://github.com/ObservaLosRios)
+- **GitHub (autor)**: [SanMabruno](https://github.com/SanMabruno)
 
 ---
 

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Visualización - Universidad Austral de Chile</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Plotly.js para gráficos interactivos -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="logos-container">
+            <img src="thumbnail_Logo observa.png" alt="Universidad Austral de Chile - Centro de Estudios Regionales" class="header-logo-left">
+            <img src="thumbnail_images.png" alt="Logo Región" class="header-logo">
+        </div>
+        <div class="header-content">
+            <h1 class="main-title" id="main-title">Plantilla de Visualización de Datos</h1>
+            <p class="subtitle" id="subtitle">Universidad Austral de Chile - Centro de Estudios Regionales</p>
+        </div>
+    </header>
+    
+    <!-- Navegación -->
+    <nav class="nav-container">
+        <div class="nav-links" id="nav-links">
+            <span class="nav-link active" data-section="viz-tasa-informal">Tasa de informalidad</span>
+            <span class="nav-link" data-section="viz-ocupados-informales">Ocupados informales</span>
+            <span class="nav-link" data-section="viz-tasa-noagro">Informalidad no agropecuaria</span>
+            <span class="nav-link" data-section="viz-inf-los-rios-edu">Informales por educación</span>
+            <span class="nav-link" data-section="viz-for-los-rios-edu">Formales por educación</span>
+        </div>
+    </nav>
+    
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Secciones dinámicas se generarán aquí -->
+        <div id="dynamic-sections"></div>
+
+        <!-- Visualización 1: Tasa de Ocupación Informal (%) -->
+    <section id="viz-tasa-informal" class="section active">
+            <div class="chart-section">
+                <div id="chart-tasa-informal" aria-label="Gráfico Tasa de informalidad"></div>
+            </div>
+        </section>
+
+        <!-- Visualización 2: Ocupados informales (personas) -->
+        <section id="viz-ocupados-informales" class="section">
+            <div class="chart-section">
+                <div id="chart-ocupados-informales" aria-label="Gráfico Ocupados informales"></div>
+            </div>
+        </section>
+
+        <!-- Visualización 3: Tasa informal no agro (%) -->
+        <section id="viz-tasa-noagro" class="section">
+            <div class="chart-section">
+                <div id="chart-tasa-noagro" aria-label="Gráfico Informalidad no agropecuaria"></div>
+            </div>
+        </section>
+
+        <!-- Visualización 4: Los Ríos — Ocupados informales por nivel educativo y sexo -->
+        <section id="viz-inf-los-rios-edu" class="section">
+            <div class="chart-section">
+                <div id="chart-inf-los-rios-edu" aria-label="Gráfico Informales por educación (Los Ríos)"></div>
+            </div>
+        </section>
+
+        <!-- Visualización 5: Los Ríos — Ocupados formales por nivel educativo y sexo -->
+        <section id="viz-for-los-rios-edu" class="section">
+            <div class="chart-section">
+                <div id="chart-for-los-rios-edu" aria-label="Gráfico Formales por educación (Los Ríos)"></div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text" id="footer-text">
+            Desarrollado con Plantilla de Visualización<br>
+            Universidad Austral de Chile - Centro de Estudios Regionales
+        </p>
+        <img src="thumbnail_logo cer.png" alt="Universidad Austral de Chile - Centro de Estudios Regionales" class="footer-logo">
+    </footer>
+
+    <!-- Botón flotante de configuración eliminado por solicitud -->
+
+    <!-- Modal de configuración -->
+    <div id="configModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #1B4F72; margin-bottom: 20px;">Configuración de la Plantilla</h2>
+            
+            <div class="config-section">
+                <h3>Información General</h3>
+                <label for="title-input">Título Principal:</label>
+                <input type="text" id="title-input" placeholder="Ej: Análisis de Ventas 2024">
+                
+                <label for="subtitle-input">Subtítulo:</label>
+                <input type="text" id="subtitle-input" placeholder="Ej: Reporte Trimestral de Resultados">
+                
+                <label for="footer-input">Texto del Footer:</label>
+                <textarea id="footer-input" placeholder="Ej: Análisis desarrollado por...&#10;Empresa - Departamento"></textarea>
+            </div>
+            
+            <div class="config-section">
+                <h3>Datos JSON</h3>
+                <label for="data-input">Datos (formato JSON):</label>
+                <textarea id="data-input" placeholder='Ejemplo:
+{
+  "charts": {
+    "ventas": {
+      "title": "Ventas por Mes",
+      "type": "bar",
+      "data": [{"mes": "Enero", "valor": 1000}, {"mes": "Febrero", "valor": 1200}]
+    },
+    "usuarios": {
+      "title": "Usuarios Activos",
+      "type": "line", 
+      "data": [{"fecha": "2024-01", "cantidad": 500}, {"fecha": "2024-02", "cantidad": 650}]
+    }
+  }
+}'></textarea>
+            </div>
+            
+            <div id="status-message"></div>
+            
+            <button class="btn" onclick="applyConfiguration()">Aplicar Configuración</button>
+            <button class="btn" onclick="loadExampleData()" style="background: #6c757d; margin-left: 10px;">Cargar Datos de Ejemplo</button>
+        </div>
+    </div>
+
+    <!-- Tooltip global -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="interactive.js"></script>
+    <script>
+    // Registro global de gráficos para manejar resize
+    const renderedCharts = new Set();
+    
+    // Alturas específicas por tipo de gráfico (extraídas de los HTMLs independientes)
+    const CHART_HEIGHTS = {
+        'chart-tasa-informal': { base: 500, min: 320, max: 720, vh: 55 },
+        'chart-ocupados-informales': { base: 500, min: 320, max: 720, vh: 55 },
+        'chart-tasa-noagro': { base: 500, min: 320, max: 720, vh: 55 },
+        'chart-inf-los-rios-edu': { base: 520, min: 340, max: 760, vh: 60 },
+        'chart-for-los-rios-edu': { base: 520, min: 340, max: 760, vh: 60 }
+    };
+
+    function clamp(n, min, max){ return Math.max(min, Math.min(max, n)); }
+    function targetHeightFor(containerId) {
+        const spec = CHART_HEIGHTS[containerId] || { base: 500, min: 320, max: 720, vh: 55 };
+        const byVh = (window.innerHeight * (spec.vh/100));
+        return Math.round(clamp(byVh, spec.min, spec.max));
+    }
+
+    // Función genérica para renderizar un gráfico Plotly desde un JSON (responsive)
+    async function renderPlotFromJSON(containerId, jsonPath, options) {
+        const resp = await fetch(jsonPath, { cache: 'no-store' });
+        if (!resp.ok) throw new Error(`No se pudo cargar ${jsonPath} (${resp.status})`);
+        const data = await resp.json();
+
+    const isMobile = window.innerWidth <= 640;
+    const containerHeight = targetHeightFor(containerId);
+
+        // Reducir densidad de ticks en móviles para evitar solapamientos
+        let tickvals = data.tickvals;
+        let ticktext = data.ticktext;
+        if (isMobile && Array.isArray(tickvals) && tickvals.length > 0) {
+            const n = tickvals.length;
+            const target = 6; // ~6 marcas visibles en móvil
+            const step = Math.max(1, Math.ceil(n / target));
+            const filtered = [];
+            const filteredText = [];
+            for (let i = 0; i < n; i += step) { filtered.push(tickvals[i]); filteredText.push(ticktext[i]); }
+            // Asegurar incluir el último
+            if (filtered[filtered.length - 1] !== tickvals[n - 1]) {
+                filtered.push(tickvals[n - 1]);
+                filteredText.push(ticktext[n - 1]);
+            }
+            tickvals = filtered;
+            ticktext = filteredText;
+        }
+
+        const trace = {
+            x: data.trimestres,
+            y: data.valores,
+            mode: 'lines+markers',
+            name: data.label,
+            line: { color: data.color, width: isMobile ? 2.5 : 3 },
+            marker: { color: data.color, size: isMobile ? 5 : 6 },
+            hovertemplate: `<b>%{x}</b><br>${data.label}: ${options.yHover}<extra></extra>`
+        };
+
+        const layout = {
+            title: {
+                text: options.titleHtml,
+                x: 0,
+                font: { size: isMobile ? 16 : 20, family: 'Georgia, serif', color: '#1e293b' }
+            },
+            font: { family: 'Georgia, serif', color: '#1e293b' },
+            legend: { font: { family: 'Georgia, serif' }, orientation: 'h', x: 0, y: isMobile ? -0.22 : -0.1 },
+            plot_bgcolor: 'white',
+            paper_bgcolor: 'white',
+            autosize: true,
+            xaxis: {
+                title: '',
+                showgrid: false,
+                tickfont: { family: 'Georgia, serif', size: isMobile ? 10 : 12 },
+                linecolor: '#d1d5db',
+                tickcolor: '#d1d5db',
+                tickmode: 'array',
+                tickvals,
+                ticktext,
+                tickangle: isMobile ? -20 : 0,
+                // Asegura mostrar desde el primer al último período presente en los datos
+                range: [data.trimestres[0], data.trimestres[data.trimestres.length - 1]]
+            },
+            yaxis: {
+                title: '',
+                showgrid: true,
+                gridcolor: '#f3f4f6',
+                gridwidth: 1,
+                tickfont: { family: 'Georgia, serif', size: isMobile ? 10 : 12 },
+                linecolor: '#d1d5db',
+                tickcolor: '#d1d5db',
+                tickformat: options.yTickFormat,
+                zeroline: false
+            },
+            margin: { l: isMobile ? 12 : 20, r: isMobile ? 12 : 120, t: isMobile ? 64 : 100, b: isMobile ? 56 : 60 },
+            height: containerHeight
+        };
+
+        Plotly.newPlot(containerId, [trace], layout, { displaylogo: false, responsive: true });
+        renderedCharts.add(containerId);
+        return data;
+    }
+
+    // Renderizador para barras agrupadas por nivel educativo y sexo desde JSON (Los Ríos)
+    async function renderGroupedEdu(containerId, jsonPath, options) {
+        const resp = await fetch(jsonPath, { cache: 'no-store' });
+        if (!resp.ok) throw new Error(`No se pudo cargar ${jsonPath} (${resp.status})`);
+        const data = await resp.json();
+
+        const EDU_ORDER = [
+            'Sin educación','Básica incompleta','Básica completa',
+            'Media incompleta','Media completa','Superior incompleta','Superior completa'
+        ];
+        const COLORS = { 'Hombres': '#1f4e79', 'Mujeres': '#b6465f' };
+
+    const isMobile = window.innerWidth <= 640;
+    const containerHeight = targetHeightFor(containerId);        const records = Array.isArray(data.records) ? data.records : [];
+        const sexA = 'Hombres';
+        const sexB = 'Mujeres';
+
+    if (options.orientation === 'h') {
+            // Barras horizontales (Formales)
+            const xH = [], xM = [];
+            for (const lvl of EDU_ORDER) {
+                const recH = records.find(d => d.nivel_educativo === lvl && d.sexo === sexA);
+                const recM = records.find(d => d.nivel_educativo === lvl && d.sexo === sexB);
+                xH.push(recH ? +(recH[options.valueKey] || 0) : 0);
+                xM.push(recM ? +(recM[options.valueKey] || 0) : 0);
+            }
+            const traces = [
+                {
+                    y: EDU_ORDER, x: xH, type: 'bar', orientation: 'h', name: sexA,
+                    marker: { color: COLORS[sexA], line: { width: 0.4, color: '#94a3b8' } },
+                    text: isMobile ? undefined : xH.map(v => v ? v.toLocaleString('es-CL') : ''), textposition: 'outside', cliponaxis: false,
+                    hovertemplate: '%{y}<br>%{x:,d} personas<extra>' + sexA + '</extra>'
+                },
+                {
+                    y: EDU_ORDER, x: xM, type: 'bar', orientation: 'h', name: sexB,
+                    marker: { color: COLORS[sexB], line: { width: 0.4, color: '#94a3b8' } },
+                    text: isMobile ? undefined : xM.map(v => v ? v.toLocaleString('es-CL') : ''), textposition: 'outside', cliponaxis: false,
+                    hovertemplate: '%{y}<br>%{x:,d} personas<extra>' + sexB + '</extra>'
+                }
+            ];
+            const layout = {
+                title: { text: '' }, barmode: 'group', bargap: 0.25, bargroupgap: 0.18,
+                plot_bgcolor: 'white', paper_bgcolor: 'white', font: { family: 'Georgia, serif', color: '#1e293b', size: isMobile ? 11 : 12 }, autosize: true,
+                margin: { t: isMobile ? 84 : 120, r: isMobile ? 16 : 24, b: isMobile ? 36 : 40, l: isMobile ? 96 : 160 },
+                yaxis: { title: { text: 'Nivel educativo' }, categoryorder: 'array', categoryarray: EDU_ORDER, showgrid: false, linecolor: '#cbd5e1', tickfont: { size: isMobile ? 10 : 12 }, automargin: true },
+                xaxis: { title: { text: options.axisLabel }, rangemode: 'tozero', gridcolor: '#e2e8f0', gridwidth: 0.6, tickformat: ',d', linecolor: '#cbd5e1', tickfont: { size: isMobile ? 10 : 12 } },
+                legend: { orientation: 'h', x: 0.02, y: -0.18 },
+                annotations: [],
+                height: containerHeight
+            };
+
+            // Agregar anotaciones para título y subtítulo (barras horizontales)
+        if (options.titleText) {
+                layout.annotations.push({
+                    text: options.titleText,
+            x: isMobile ? -0.06 : -0.1,
+            y: isMobile ? 1.16 : 1.25,
+                    xref: 'paper',
+                    yref: 'paper',
+                    xanchor: 'left',
+                    yanchor: 'top',
+                    showarrow: false,
+            font: { size: isMobile ? 14 : 16, family: 'Georgia, serif', color: '#2c3e50' },
+                    bgcolor: 'rgba(255,255,255,0.8)',
+                    bordercolor: '#e2e8f0',
+                    borderwidth: 1
+                });
+            }
+
+        if (options.subtitleText) {
+                layout.annotations.push({
+                    text: options.subtitleText,
+            x: isMobile ? -0.06 : -0.1,
+            y: isMobile ? 1.10 : 1.18,
+                    xref: 'paper',
+                    yref: 'paper',
+                    xanchor: 'left',
+                    yanchor: 'top',
+                    showarrow: false,
+            font: { size: isMobile ? 12 : 12, family: 'Georgia, serif', color: '#666' }
+                });
+            }
+            Plotly.newPlot(containerId, traces, layout, { displaylogo: false, responsive: true });
+            renderedCharts.add(containerId);
+    } else {
+            // Barras verticales (Informales)
+            const yH = [], yM = [];
+            for (const lvl of EDU_ORDER) {
+                const recH = records.find(d => d.nivel_educativo === lvl && d.sexo === sexA);
+                const recM = records.find(d => d.nivel_educativo === lvl && d.sexo === sexB);
+                yH.push(recH ? +(recH[options.valueKey] || 0) : 0);
+                yM.push(recM ? +(recM[options.valueKey] || 0) : 0);
+            }
+            const traces = [
+                { x: EDU_ORDER, y: yH, type: 'bar', name: sexA, marker: { color: COLORS[sexA], line: { width: 0.4, color: '#94a3b8' } }, hovertemplate: '%{x}<br>%{y:,d} personas<extra>' + sexA + '</extra>' },
+                { x: EDU_ORDER, y: yM, type: 'bar', name: sexB, marker: { color: COLORS[sexB], line: { width: 0.4, color: '#94a3b8' } }, hovertemplate: '%{x}<br>%{y:,d} personas<extra>' + sexB + '</extra>' }
+            ];
+            const layout = {
+                title: { text: '' }, // sin título tradicional
+                barmode: 'group', bargap: 0.2, bargroupgap: 0.1,
+                plot_bgcolor: 'white', paper_bgcolor: 'white', font: { family: 'Georgia, serif', color: '#1e293b', size: isMobile ? 11 : 12 }, autosize: true,
+                margin: { t: isMobile ? 84 : 120, r: isMobile ? 12 : 24, b: isMobile ? 56 : 64, l: isMobile ? 48 : 64 },
+                xaxis: { title: { text: 'Nivel educativo' }, categoryorder: 'array', categoryarray: EDU_ORDER, showgrid: false, linecolor: '#cbd5e1', tickangle: isMobile ? -10 : 0, automargin: true },
+                yaxis: { title: { text: options.axisLabel }, rangemode: 'tozero', gridcolor: '#e2e8f0', gridwidth: 0.6, tickformat: ',d', linecolor: '#cbd5e1', tickfont: { size: isMobile ? 10 : 12 } },
+                legend: { orientation: 'h', x: 0.02, y: -0.18 },
+                annotations: [],
+                height: containerHeight
+            };
+
+            // Agregar anotaciones para título y subtítulo
+        if (options.titleText) {
+                layout.annotations.push({
+                    text: options.titleText,
+            x: isMobile ? -0.04 : -0.05,
+            y: isMobile ? 1.12 : 1.2,
+                    xref: 'paper',
+                    yref: 'paper',
+                    xanchor: 'left',
+                    yanchor: 'top',
+                    showarrow: false,
+            font: { size: isMobile ? 14 : 16, family: 'Georgia, serif', color: '#2c3e50' },
+                    bgcolor: 'rgba(255,255,255,0.8)',
+                    bordercolor: '#e2e8f0',
+                    borderwidth: 1
+                });
+            }
+
+        if (options.subtitleText) {
+                layout.annotations.push({
+                    text: options.subtitleText,
+            x: isMobile ? -0.04 : -0.05,
+            y: isMobile ? 1.06 : 1.13,
+                    xref: 'paper',
+                    yref: 'paper',
+                    xanchor: 'left',
+                    yanchor: 'top',
+                    showarrow: false,
+            font: { size: isMobile ? 12 : 12, family: 'Georgia, serif', color: '#666' }
+                });
+            }
+            Plotly.newPlot(containerId, traces, layout, { displaylogo: false, responsive: true });
+            renderedCharts.add(containerId);
+        }
+        return data;
+    }
+
+    // Redimensiona todos los gráficos al cambiar el tamaño de la ventana
+    let __resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(__resizeTimer);
+        __resizeTimer = setTimeout(() => {
+            for (const id of renderedCharts) {
+                const el = document.getElementById(id);
+                if (!el) continue;
+                const h = targetHeightFor(id);
+                Plotly.relayout(id, { height: h });
+                Plotly.Plots.resize(id);
+            }
+        }, 120);
+    });
+
+    // Render automático de las 3 visualizaciones al cargar la página
+    (async function(){
+        try {
+            await renderPlotFromJSON(
+                'chart-tasa-informal',
+                'data/tasa_informal_sector.json',
+                {
+                    titleHtml: '<b>Tasa de Ocupación Informal en Los Ríos (2017-2024)</b><br><sub>Porcentaje de trabajadores ocupados en empleos informales por trimestre</sub>',
+                    yHover: '%{y:.1f}%',
+                    yTickFormat: ''
+                }
+            );
+
+            await renderPlotFromJSON(
+                'chart-ocupados-informales',
+                'data/ocupados_informales.json',
+                {
+                    titleHtml: '<b>Ocupados Informales en Los Ríos (2017-2024)</b><br><sub>Número de personas ocupadas en empleos informales por trimestre</sub>',
+                    yHover: '%{y:,.0f}',
+                    yTickFormat: ','
+                }
+            );
+
+            await renderPlotFromJSON(
+                'chart-tasa-noagro',
+                'data/tasa_informal_noagro.json',
+                {
+                    titleHtml: '<b>Tasa Informal No Agropecuario en Los Ríos (2017-2024)</b><br><sub>Porcentaje de ocupación informal excluyendo el sector agropecuario por trimestre</sub>',
+                    yHover: '%{y:.1f}%',
+                    yTickFormat: ''
+                }
+            );
+
+            // Los Ríos — Informales por nivel educativo (vertical)
+            await renderGroupedEdu(
+                'chart-inf-los-rios-edu',
+                'data/ocupados_informales_edu_sexo_los_rios.json',
+                { 
+                    orientation: 'v', 
+                    valueKey: 'ocupados_informales', 
+                    axisLabel: 'Ocupados informales (personas)',
+                    titleText: '<b>Ocupados informales por nivel educativo y sexo (2024)</b>',
+                    subtitleText: 'Distribución de trabajadores informales según formación académica en Los Ríos'
+                }
+            );
+
+            // Los Ríos — Formales por nivel educativo (horizontal)
+            await renderGroupedEdu(
+                'chart-for-los-rios-edu',
+                'data/ocupados_formales_edu_sexo_los_rios.json',
+                { 
+                    orientation: 'h', 
+                    valueKey: 'ocupados_formales', 
+                    axisLabel: 'Ocupados formales (personas)',
+                    titleText: '<b>Ocupados formales por nivel educativo y sexo (2024)</b>',
+                    subtitleText: 'Distribución de trabajadores formales según formación académica en Los Ríos'
+                }
+            );
+        } catch (err) {
+            console.error('Error renderizando gráficos:', err);
+        }
+    })();
+    </script>
+</body>
+</html>

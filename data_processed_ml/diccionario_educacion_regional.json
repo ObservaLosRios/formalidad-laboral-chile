@@ -1,0 +1,37 @@
+{
+  "archivo": "/Users/brunosanmartin/Documents/UACh/formalidad-informalidad-laboral-sector-chile/data_processed_ml/educacion_regional_tidy_20250825_021407.csv",
+  "diccionario": [
+    {
+      "col": "trimestre",
+      "desc": "Trimestre móvil (string, p.ej. 2024Q1)"
+    },
+    {
+      "col": "region",
+      "desc": "Región administrativa de Chile"
+    },
+    {
+      "col": "sexo",
+      "desc": "Hombres / Mujeres"
+    },
+    {
+      "col": "nivel_educativo",
+      "desc": "Nivel educativo ordenado"
+    },
+    {
+      "col": "ocupados_informales",
+      "desc": "Número de ocupados informales"
+    },
+    {
+      "col": "ocupados_formales",
+      "desc": "Número de ocupados formales"
+    },
+    {
+      "col": "ocupados_totales",
+      "desc": "Suma de formales e informales"
+    },
+    {
+      "col": "tasa_informal",
+      "desc": "ocupados_informales / ocupados_totales"
+    }
+  ]
+}

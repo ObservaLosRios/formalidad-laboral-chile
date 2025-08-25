@@ -1,0 +1,66 @@
+{
+  "periodo": "2024Q4",
+  "ranking": [
+    {
+      "region": "Los Lagos",
+      "tasa_informal": 0.42117216342029334
+    },
+    {
+      "region": "Ñuble",
+      "tasa_informal": 0.4138091057450528
+    },
+    {
+      "region": "O’Higgins",
+      "tasa_informal": 0.40955155381718883
+    },
+    {
+      "region": "Aysén",
+      "tasa_informal": 0.40949748181070417
+    },
+    {
+      "region": "Maule",
+      "tasa_informal": 0.3979337923643806
+    },
+    {
+      "region": "Los Ríos",
+      "tasa_informal": 0.39785199983663533
+    },
+    {
+      "region": "Valparaíso",
+      "tasa_informal": 0.3957263972240912
+    },
+    {
+      "region": "Tarapacá",
+      "tasa_informal": 0.39488064860412025
+    },
+    {
+      "region": "Coquimbo",
+      "tasa_informal": 0.38642073808597
+    },
+    {
+      "region": "Atacama",
+      "tasa_informal": 0.38442240826238716
+    },
+    {
+      "region": "Biobío",
+      "tasa_informal": 0.3834086164259371
+    },
+    {
+      "region": "Magallanes",
+      "tasa_informal": 0.3829138760803444
+    },
+    {
+      "region": "La Araucanía",
+      "tasa_informal": 0.3801670013560197
+    },
+    {
+      "region": "Antofagasta",
+      "tasa_informal": 0.3793825062914768
+    },
+    {
+      "region": "Metropolitana",
+      "tasa_informal": 0.37029109276235245
+    }
+  ],
+  "units": "ratio"
+}

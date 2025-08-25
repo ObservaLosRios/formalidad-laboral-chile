@@ -1,0 +1,1681 @@
+trimestre,region,sexo,nivel_educativo,ocupados_informales,ocupados_formales
+2023Q1,Tarapacá,Hombres,Sin educación,9524,11915
+2023Q1,Tarapacá,Hombres,Básica incompleta,5991,8151
+2023Q1,Tarapacá,Hombres,Básica completa,2491,3535
+2023Q1,Tarapacá,Hombres,Media incompleta,8025,8415
+2023Q1,Tarapacá,Hombres,Media completa,1350,2238
+2023Q1,Tarapacá,Hombres,Superior incompleta,3186,4511
+2023Q1,Tarapacá,Hombres,Superior completa,1708,2785
+2023Q1,Tarapacá,Mujeres,Sin educación,1551,3024
+2023Q1,Tarapacá,Mujeres,Básica incompleta,5255,12589
+2023Q1,Tarapacá,Mujeres,Básica completa,4191,12090
+2023Q1,Tarapacá,Mujeres,Media incompleta,6034,6633
+2023Q1,Tarapacá,Mujeres,Media completa,1472,2408
+2023Q1,Tarapacá,Mujeres,Superior incompleta,7089,8187
+2023Q1,Tarapacá,Mujeres,Superior completa,6075,8347
+2023Q2,Tarapacá,Hombres,Sin educación,1226,1854
+2023Q2,Tarapacá,Hombres,Básica incompleta,2591,7019
+2023Q2,Tarapacá,Hombres,Básica completa,4081,5514
+2023Q2,Tarapacá,Hombres,Media incompleta,3742,6886
+2023Q2,Tarapacá,Hombres,Media completa,1623,2121
+2023Q2,Tarapacá,Hombres,Superior incompleta,4336,6591
+2023Q2,Tarapacá,Hombres,Superior completa,3439,4101
+2023Q2,Tarapacá,Mujeres,Sin educación,4698,10644
+2023Q2,Tarapacá,Mujeres,Básica incompleta,1361,1829
+2023Q2,Tarapacá,Mujeres,Básica completa,4048,6002
+2023Q2,Tarapacá,Mujeres,Media incompleta,3992,8176
+2023Q2,Tarapacá,Mujeres,Media completa,4292,5769
+2023Q2,Tarapacá,Mujeres,Superior incompleta,5262,7067
+2023Q2,Tarapacá,Mujeres,Superior completa,2007,2894
+2023Q3,Tarapacá,Hombres,Sin educación,6692,7670
+2023Q3,Tarapacá,Hombres,Básica incompleta,9177,11942
+2023Q3,Tarapacá,Hombres,Básica completa,8121,13225
+2023Q3,Tarapacá,Hombres,Media incompleta,834,1009
+2023Q3,Tarapacá,Hombres,Media completa,6169,14279
+2023Q3,Tarapacá,Hombres,Superior incompleta,4506,7083
+2023Q3,Tarapacá,Hombres,Superior completa,5462,9639
+2023Q3,Tarapacá,Mujeres,Sin educación,1630,1926
+2023Q3,Tarapacá,Mujeres,Básica incompleta,5604,6904
+2023Q3,Tarapacá,Mujeres,Básica completa,6777,9158
+2023Q3,Tarapacá,Mujeres,Media incompleta,2109,4023
+2023Q3,Tarapacá,Mujeres,Media completa,6345,6670
+2023Q3,Tarapacá,Mujeres,Superior incompleta,1250,2299
+2023Q3,Tarapacá,Mujeres,Superior completa,2892,6921
+2023Q4,Tarapacá,Hombres,Sin educación,2631,3051
+2023Q4,Tarapacá,Hombres,Básica incompleta,1419,1456
+2023Q4,Tarapacá,Hombres,Básica completa,9162,11114
+2023Q4,Tarapacá,Hombres,Media incompleta,5156,8284
+2023Q4,Tarapacá,Hombres,Media completa,6328,6748
+2023Q4,Tarapacá,Hombres,Superior incompleta,8260,11464
+2023Q4,Tarapacá,Hombres,Superior completa,4126,8788
+2023Q4,Tarapacá,Mujeres,Sin educación,4680,9518
+2023Q4,Tarapacá,Mujeres,Básica incompleta,3240,4891
+2023Q4,Tarapacá,Mujeres,Básica completa,794,1150
+2023Q4,Tarapacá,Mujeres,Media incompleta,2302,4086
+2023Q4,Tarapacá,Mujeres,Media completa,812,1526
+2023Q4,Tarapacá,Mujeres,Superior incompleta,4563,7469
+2023Q4,Tarapacá,Mujeres,Superior completa,6622,9827
+2024Q1,Tarapacá,Hombres,Sin educación,1964,2210
+2024Q1,Tarapacá,Hombres,Básica incompleta,1128,2454
+2024Q1,Tarapacá,Hombres,Básica completa,3144,5441
+2024Q1,Tarapacá,Hombres,Media incompleta,1339,1840
+2024Q1,Tarapacá,Hombres,Media completa,6799,10859
+2024Q1,Tarapacá,Hombres,Superior incompleta,8353,12962
+2024Q1,Tarapacá,Hombres,Superior completa,4539,5920
+2024Q1,Tarapacá,Mujeres,Sin educación,4005,4583
+2024Q1,Tarapacá,Mujeres,Básica incompleta,3220,5080
+2024Q1,Tarapacá,Mujeres,Básica completa,8644,12123
+2024Q1,Tarapacá,Mujeres,Media incompleta,7166,10363
+2024Q1,Tarapacá,Mujeres,Media completa,3917,4764
+2024Q1,Tarapacá,Mujeres,Superior incompleta,6360,12873
+2024Q1,Tarapacá,Mujeres,Superior completa,1056,2092
+2024Q2,Tarapacá,Hombres,Sin educación,6391,9018
+2024Q2,Tarapacá,Hombres,Básica incompleta,4842,7283
+2024Q2,Tarapacá,Hombres,Básica completa,2154,4030
+2024Q2,Tarapacá,Hombres,Media incompleta,1439,1996
+2024Q2,Tarapacá,Hombres,Media completa,2639,4201
+2024Q2,Tarapacá,Hombres,Superior incompleta,6279,14414
+2024Q2,Tarapacá,Hombres,Superior completa,2152,3923
+2024Q2,Tarapacá,Mujeres,Sin educación,6606,11975
+2024Q2,Tarapacá,Mujeres,Básica incompleta,3588,4588
+2024Q2,Tarapacá,Mujeres,Básica completa,3995,6213
+2024Q2,Tarapacá,Mujeres,Media incompleta,3502,9962
+2024Q2,Tarapacá,Mujeres,Media completa,4245,9092
+2024Q2,Tarapacá,Mujeres,Superior incompleta,1617,1770
+2024Q2,Tarapacá,Mujeres,Superior completa,6100,10765
+2024Q3,Tarapacá,Hombres,Sin educación,748,1110
+2024Q3,Tarapacá,Hombres,Básica incompleta,6752,9800
+2024Q3,Tarapacá,Hombres,Básica completa,1405,2683
+2024Q3,Tarapacá,Hombres,Media incompleta,3133,3565
+2024Q3,Tarapacá,Hombres,Media completa,4267,5272
+2024Q3,Tarapacá,Hombres,Superior incompleta,6276,10135
+2024Q3,Tarapacá,Hombres,Superior completa,2937,6690
+2024Q3,Tarapacá,Mujeres,Sin educación,3112,6377
+2024Q3,Tarapacá,Mujeres,Básica incompleta,2610,5058
+2024Q3,Tarapacá,Mujeres,Básica completa,7010,9238
+2024Q3,Tarapacá,Mujeres,Media incompleta,3193,4026
+2024Q3,Tarapacá,Mujeres,Media completa,6525,8957
+2024Q3,Tarapacá,Mujeres,Superior incompleta,994,1416
+2024Q3,Tarapacá,Mujeres,Superior completa,9798,13831
+2024Q4,Tarapacá,Hombres,Sin educación,3115,6441
+2024Q4,Tarapacá,Hombres,Básica incompleta,4995,10518
+2024Q4,Tarapacá,Hombres,Básica completa,2725,2965
+2024Q4,Tarapacá,Hombres,Media incompleta,886,1649
+2024Q4,Tarapacá,Hombres,Media completa,7590,11487
+2024Q4,Tarapacá,Hombres,Superior incompleta,2617,3535
+2024Q4,Tarapacá,Hombres,Superior completa,3415,5997
+2024Q4,Tarapacá,Mujeres,Sin educación,5289,8217
+2024Q4,Tarapacá,Mujeres,Básica incompleta,3980,5236
+2024Q4,Tarapacá,Mujeres,Básica completa,2996,8118
+2024Q4,Tarapacá,Mujeres,Media incompleta,6390,10236
+2024Q4,Tarapacá,Mujeres,Media completa,7836,9477
+2024Q4,Tarapacá,Mujeres,Superior incompleta,7306,9552
+2024Q4,Tarapacá,Mujeres,Superior completa,8031,7951
+2023Q1,Antofagasta,Hombres,Sin educación,1094,1788
+2023Q1,Antofagasta,Hombres,Básica incompleta,3016,5285
+2023Q1,Antofagasta,Hombres,Básica completa,7029,9028
+2023Q1,Antofagasta,Hombres,Media incompleta,5967,8621
+2023Q1,Antofagasta,Hombres,Media completa,2384,4095
+2023Q1,Antofagasta,Hombres,Superior incompleta,1591,2204
+2023Q1,Antofagasta,Hombres,Superior completa,5581,9842
+2023Q1,Antofagasta,Mujeres,Sin educación,5252,7325
+2023Q1,Antofagasta,Mujeres,Básica incompleta,4201,5594
+2023Q1,Antofagasta,Mujeres,Básica completa,1204,1614
+2023Q1,Antofagasta,Mujeres,Media incompleta,1277,3069
+2023Q1,Antofagasta,Mujeres,Media completa,2702,5454
+2023Q1,Antofagasta,Mujeres,Superior incompleta,1844,3146
+2023Q1,Antofagasta,Mujeres,Superior completa,2805,3567
+2023Q2,Antofagasta,Hombres,Sin educación,1432,2639
+2023Q2,Antofagasta,Hombres,Básica incompleta,8308,10094
+2023Q2,Antofagasta,Hombres,Básica completa,4310,7110
+2023Q2,Antofagasta,Hombres,Media incompleta,3397,5524
+2023Q2,Antofagasta,Hombres,Media completa,3598,7097
+2023Q2,Antofagasta,Hombres,Superior incompleta,5149,8474
+2023Q2,Antofagasta,Hombres,Superior completa,8473,8812
+2023Q2,Antofagasta,Mujeres,Sin educación,3430,3923
+2023Q2,Antofagasta,Mujeres,Básica incompleta,3916,4880
+2023Q2,Antofagasta,Mujeres,Básica completa,3607,3986
+2023Q2,Antofagasta,Mujeres,Media incompleta,6394,9334
+2023Q2,Antofagasta,Mujeres,Media completa,943,1960
+2023Q2,Antofagasta,Mujeres,Superior incompleta,4392,12178
+2023Q2,Antofagasta,Mujeres,Superior completa,2199,4548
+2023Q3,Antofagasta,Hombres,Sin educación,2058,3574
+2023Q3,Antofagasta,Hombres,Básica incompleta,2262,4230
+2023Q3,Antofagasta,Hombres,Básica completa,5152,6605
+2023Q3,Antofagasta,Hombres,Media incompleta,849,1832
+2023Q3,Antofagasta,Hombres,Media completa,7229,6149
+2023Q3,Antofagasta,Hombres,Superior incompleta,3034,4853
+2023Q3,Antofagasta,Hombres,Superior completa,2005,4644
+2023Q3,Antofagasta,Mujeres,Sin educación,2315,3184
+2023Q3,Antofagasta,Mujeres,Básica incompleta,5056,9083
+2023Q3,Antofagasta,Mujeres,Básica completa,8049,10359
+2023Q3,Antofagasta,Mujeres,Media incompleta,8044,11287
+2023Q3,Antofagasta,Mujeres,Media completa,5181,6418
+2023Q3,Antofagasta,Mujeres,Superior incompleta,2377,3056
+2023Q3,Antofagasta,Mujeres,Superior completa,3369,3830
+2023Q4,Antofagasta,Hombres,Sin educación,6955,7927
+2023Q4,Antofagasta,Hombres,Básica incompleta,4819,7687
+2023Q4,Antofagasta,Hombres,Básica completa,7510,10177
+2023Q4,Antofagasta,Hombres,Media incompleta,3625,6300
+2023Q4,Antofagasta,Hombres,Media completa,1264,1526
+2023Q4,Antofagasta,Hombres,Superior incompleta,6123,14270
+2023Q4,Antofagasta,Hombres,Superior completa,3057,3470
+2023Q4,Antofagasta,Mujeres,Sin educación,3574,4203
+2023Q4,Antofagasta,Mujeres,Básica incompleta,3538,8011
+2023Q4,Antofagasta,Mujeres,Básica completa,4319,7919
+2023Q4,Antofagasta,Mujeres,Media incompleta,2586,5724
+2023Q4,Antofagasta,Mujeres,Media completa,5881,9961
+2023Q4,Antofagasta,Mujeres,Superior incompleta,3046,6699
+2023Q4,Antofagasta,Mujeres,Superior completa,935,1335
+2024Q1,Antofagasta,Hombres,Sin educación,2035,3574
+2024Q1,Antofagasta,Hombres,Básica incompleta,3776,5194
+2024Q1,Antofagasta,Hombres,Básica completa,4372,8989
+2024Q1,Antofagasta,Hombres,Media incompleta,1583,2341
+2024Q1,Antofagasta,Hombres,Media completa,7851,9800
+2024Q1,Antofagasta,Hombres,Superior incompleta,4556,8857
+2024Q1,Antofagasta,Hombres,Superior completa,1837,4010
+2024Q1,Antofagasta,Mujeres,Sin educación,2290,2076
+2024Q1,Antofagasta,Mujeres,Básica incompleta,2265,4302
+2024Q1,Antofagasta,Mujeres,Básica completa,4243,7271
+2024Q1,Antofagasta,Mujeres,Media incompleta,3553,4996
+2024Q1,Antofagasta,Mujeres,Media completa,7291,11070
+2024Q1,Antofagasta,Mujeres,Superior incompleta,4185,4997
+2024Q1,Antofagasta,Mujeres,Superior completa,3006,3972
+2024Q2,Antofagasta,Hombres,Sin educación,4981,7905
+2024Q2,Antofagasta,Hombres,Básica incompleta,2170,2557
+2024Q2,Antofagasta,Hombres,Básica completa,2954,4158
+2024Q2,Antofagasta,Hombres,Media incompleta,1791,2474
+2024Q2,Antofagasta,Hombres,Media completa,7566,12702
+2024Q2,Antofagasta,Hombres,Superior incompleta,3149,4711
+2024Q2,Antofagasta,Hombres,Superior completa,2544,3361
+2024Q2,Antofagasta,Mujeres,Sin educación,8222,10975
+2024Q2,Antofagasta,Mujeres,Básica incompleta,3279,4810
+2024Q2,Antofagasta,Mujeres,Básica completa,8189,9518
+2024Q2,Antofagasta,Mujeres,Media incompleta,3682,5822
+2024Q2,Antofagasta,Mujeres,Media completa,4327,7376
+2024Q2,Antofagasta,Mujeres,Superior incompleta,4261,7353
+2024Q2,Antofagasta,Mujeres,Superior completa,6589,6087
+2024Q3,Antofagasta,Hombres,Sin educación,3353,3684
+2024Q3,Antofagasta,Hombres,Básica incompleta,1970,3930
+2024Q3,Antofagasta,Hombres,Básica completa,3882,6955
+2024Q3,Antofagasta,Hombres,Media incompleta,3977,5330
+2024Q3,Antofagasta,Hombres,Media completa,6722,8400
+2024Q3,Antofagasta,Hombres,Superior incompleta,2130,3907
+2024Q3,Antofagasta,Hombres,Superior completa,3491,6666
+2024Q3,Antofagasta,Mujeres,Sin educación,5275,6843
+2024Q3,Antofagasta,Mujeres,Básica incompleta,2570,5282
+2024Q3,Antofagasta,Mujeres,Básica completa,4876,7990
+2024Q3,Antofagasta,Mujeres,Media incompleta,4924,8196
+2024Q3,Antofagasta,Mujeres,Media completa,7575,6741
+2024Q3,Antofagasta,Mujeres,Superior incompleta,4286,9795
+2024Q3,Antofagasta,Mujeres,Superior completa,831,1370
+2024Q4,Antofagasta,Hombres,Sin educación,4155,6761
+2024Q4,Antofagasta,Hombres,Básica incompleta,2299,4631
+2024Q4,Antofagasta,Hombres,Básica completa,3250,5011
+2024Q4,Antofagasta,Hombres,Media incompleta,2039,5588
+2024Q4,Antofagasta,Hombres,Media completa,3278,4276
+2024Q4,Antofagasta,Hombres,Superior incompleta,2814,3534
+2024Q4,Antofagasta,Hombres,Superior completa,6168,10789
+2024Q4,Antofagasta,Mujeres,Sin educación,5486,9480
+2024Q4,Antofagasta,Mujeres,Básica incompleta,3706,5609
+2024Q4,Antofagasta,Mujeres,Básica completa,3441,5240
+2024Q4,Antofagasta,Mujeres,Media incompleta,4235,6158
+2024Q4,Antofagasta,Mujeres,Media completa,6003,10012
+2024Q4,Antofagasta,Mujeres,Superior incompleta,7446,9844
+2024Q4,Antofagasta,Mujeres,Superior completa,6723,14061
+2023Q1,Atacama,Hombres,Sin educación,5566,9839
+2023Q1,Atacama,Hombres,Básica incompleta,3020,5375
+2023Q1,Atacama,Hombres,Básica completa,3802,9051
+2023Q1,Atacama,Hombres,Media incompleta,3994,6853
+2023Q1,Atacama,Hombres,Media completa,3444,3058
+2023Q1,Atacama,Hombres,Superior incompleta,5764,7564
+2023Q1,Atacama,Hombres,Superior completa,5879,6472
+2023Q1,Atacama,Mujeres,Sin educación,7348,11886
+2023Q1,Atacama,Mujeres,Básica incompleta,1168,1687
+2023Q1,Atacama,Mujeres,Básica completa,4576,5617
+2023Q1,Atacama,Mujeres,Media incompleta,8762,11331
+2023Q1,Atacama,Mujeres,Media completa,1753,2172
+2023Q1,Atacama,Mujeres,Superior incompleta,1538,2792
+2023Q1,Atacama,Mujeres,Superior completa,3683,4184
+2023Q2,Atacama,Hombres,Sin educación,5785,9204
+2023Q2,Atacama,Hombres,Básica incompleta,6490,6486
+2023Q2,Atacama,Hombres,Básica completa,1181,2368
+2023Q2,Atacama,Hombres,Media incompleta,7009,11171
+2023Q2,Atacama,Hombres,Media completa,5981,7907
+2023Q2,Atacama,Hombres,Superior incompleta,832,1631
+2023Q2,Atacama,Hombres,Superior completa,2939,2789
+2023Q2,Atacama,Mujeres,Sin educación,3458,3443
+2023Q2,Atacama,Mujeres,Básica incompleta,4987,6756
+2023Q2,Atacama,Mujeres,Básica completa,8663,11382
+2023Q2,Atacama,Mujeres,Media incompleta,5002,5218
+2023Q2,Atacama,Mujeres,Media completa,7152,13516
+2023Q2,Atacama,Mujeres,Superior incompleta,5342,8286
+2023Q2,Atacama,Mujeres,Superior completa,3337,6610
+2023Q3,Atacama,Hombres,Sin educación,3575,8051
+2023Q3,Atacama,Hombres,Básica incompleta,6057,6951
+2023Q3,Atacama,Hombres,Básica completa,2484,3487
+2023Q3,Atacama,Hombres,Media incompleta,6864,9632
+2023Q3,Atacama,Hombres,Media completa,8923,10400
+2023Q3,Atacama,Hombres,Superior incompleta,4829,8576
+2023Q3,Atacama,Hombres,Superior completa,1441,2132
+2023Q3,Atacama,Mujeres,Sin educación,1127,2692
+2023Q3,Atacama,Mujeres,Básica incompleta,3392,3653
+2023Q3,Atacama,Mujeres,Básica completa,3240,5283
+2023Q3,Atacama,Mujeres,Media incompleta,2153,3115
+2023Q3,Atacama,Mujeres,Media completa,2355,2218
+2023Q3,Atacama,Mujeres,Superior incompleta,2141,2864
+2023Q3,Atacama,Mujeres,Superior completa,2049,3036
+2023Q4,Atacama,Hombres,Sin educación,5572,7476
+2023Q4,Atacama,Hombres,Básica incompleta,946,1785
+2023Q4,Atacama,Hombres,Básica completa,5305,7496
+2023Q4,Atacama,Hombres,Media incompleta,6329,12934
+2023Q4,Atacama,Hombres,Media completa,3837,6027
+2023Q4,Atacama,Hombres,Superior incompleta,3545,5423
+2023Q4,Atacama,Hombres,Superior completa,3692,6454
+2023Q4,Atacama,Mujeres,Sin educación,6808,9805
+2023Q4,Atacama,Mujeres,Básica incompleta,1076,2826
+2023Q4,Atacama,Mujeres,Básica completa,1114,2556
+2023Q4,Atacama,Mujeres,Media incompleta,2591,3071
+2023Q4,Atacama,Mujeres,Media completa,1712,3169
+2023Q4,Atacama,Mujeres,Superior incompleta,2125,4651
+2023Q4,Atacama,Mujeres,Superior completa,9631,13752
+2024Q1,Atacama,Hombres,Sin educación,3565,6759
+2024Q1,Atacama,Hombres,Básica incompleta,2386,2575
+2024Q1,Atacama,Hombres,Básica completa,5026,9654
+2024Q1,Atacama,Hombres,Media incompleta,2742,5287
+2024Q1,Atacama,Hombres,Media completa,2706,4081
+2024Q1,Atacama,Hombres,Superior incompleta,3889,7493
+2024Q1,Atacama,Hombres,Superior completa,3738,3434
+2024Q1,Atacama,Mujeres,Sin educación,3638,6433
+2024Q1,Atacama,Mujeres,Básica incompleta,1015,2537
+2024Q1,Atacama,Mujeres,Básica completa,1532,1509
+2024Q1,Atacama,Mujeres,Media incompleta,4578,7242
+2024Q1,Atacama,Mujeres,Media completa,1335,1622
+2024Q1,Atacama,Mujeres,Superior incompleta,3304,4929
+2024Q1,Atacama,Mujeres,Superior completa,3739,3749
+2024Q2,Atacama,Hombres,Sin educación,7656,8060
+2024Q2,Atacama,Hombres,Básica incompleta,1807,2116
+2024Q2,Atacama,Hombres,Básica completa,8928,11527
+2024Q2,Atacama,Hombres,Media incompleta,6594,10899
+2024Q2,Atacama,Hombres,Media completa,5032,9803
+2024Q2,Atacama,Hombres,Superior incompleta,2958,7257
+2024Q2,Atacama,Hombres,Superior completa,4502,5381
+2024Q2,Atacama,Mujeres,Sin educación,4358,8144
+2024Q2,Atacama,Mujeres,Básica incompleta,5828,8041
+2024Q2,Atacama,Mujeres,Básica completa,3027,5922
+2024Q2,Atacama,Mujeres,Media incompleta,1464,1280
+2024Q2,Atacama,Mujeres,Media completa,5632,8257
+2024Q2,Atacama,Mujeres,Superior incompleta,2796,3504
+2024Q2,Atacama,Mujeres,Superior completa,5600,6823
+2024Q3,Atacama,Hombres,Sin educación,3403,3823
+2024Q3,Atacama,Hombres,Básica incompleta,4421,8527
+2024Q3,Atacama,Hombres,Básica completa,7338,8505
+2024Q3,Atacama,Hombres,Media incompleta,2868,6742
+2024Q3,Atacama,Hombres,Media completa,5773,14048
+2024Q3,Atacama,Hombres,Superior incompleta,2128,2832
+2024Q3,Atacama,Hombres,Superior completa,2093,3487
+2024Q3,Atacama,Mujeres,Sin educación,2654,3181
+2024Q3,Atacama,Mujeres,Básica incompleta,9851,14671
+2024Q3,Atacama,Mujeres,Básica completa,5530,6989
+2024Q3,Atacama,Mujeres,Media incompleta,2809,7964
+2024Q3,Atacama,Mujeres,Media completa,2985,3514
+2024Q3,Atacama,Mujeres,Superior incompleta,4639,6742
+2024Q3,Atacama,Mujeres,Superior completa,3296,6691
+2024Q4,Atacama,Hombres,Sin educación,7219,8071
+2024Q4,Atacama,Hombres,Básica incompleta,5132,7719
+2024Q4,Atacama,Hombres,Básica completa,1486,2813
+2024Q4,Atacama,Hombres,Media incompleta,6036,9432
+2024Q4,Atacama,Hombres,Media completa,4079,10573
+2024Q4,Atacama,Hombres,Superior incompleta,4107,4754
+2024Q4,Atacama,Hombres,Superior completa,7745,12798
+2024Q4,Atacama,Mujeres,Sin educación,1990,4078
+2024Q4,Atacama,Mujeres,Básica incompleta,4002,4843
+2024Q4,Atacama,Mujeres,Básica completa,8995,13147
+2024Q4,Atacama,Mujeres,Media incompleta,2844,5533
+2024Q4,Atacama,Mujeres,Media completa,1245,1957
+2024Q4,Atacama,Mujeres,Superior incompleta,1495,2039
+2024Q4,Atacama,Mujeres,Superior completa,4635,9957
+2023Q1,Coquimbo,Hombres,Sin educación,815,2407
+2023Q1,Coquimbo,Hombres,Básica incompleta,9618,8993
+2023Q1,Coquimbo,Hombres,Básica completa,8554,11347
+2023Q1,Coquimbo,Hombres,Media incompleta,1795,2263
+2023Q1,Coquimbo,Hombres,Media completa,7012,9231
+2023Q1,Coquimbo,Hombres,Superior incompleta,1950,3289
+2023Q1,Coquimbo,Hombres,Superior completa,6373,6478
+2023Q1,Coquimbo,Mujeres,Sin educación,4149,10486
+2023Q1,Coquimbo,Mujeres,Básica incompleta,3741,4197
+2023Q1,Coquimbo,Mujeres,Básica completa,4884,12376
+2023Q1,Coquimbo,Mujeres,Media incompleta,1918,3019
+2023Q1,Coquimbo,Mujeres,Media completa,5875,6525
+2023Q1,Coquimbo,Mujeres,Superior incompleta,2642,4179
+2023Q1,Coquimbo,Mujeres,Superior completa,4087,7031
+2023Q2,Coquimbo,Hombres,Sin educación,7943,9385
+2023Q2,Coquimbo,Hombres,Básica incompleta,6178,10126
+2023Q2,Coquimbo,Hombres,Básica completa,6713,7518
+2023Q2,Coquimbo,Hombres,Media incompleta,9036,11120
+2023Q2,Coquimbo,Hombres,Media completa,6465,10140
+2023Q2,Coquimbo,Hombres,Superior incompleta,652,1813
+2023Q2,Coquimbo,Hombres,Superior completa,9416,8372
+2023Q2,Coquimbo,Mujeres,Sin educación,3909,7485
+2023Q2,Coquimbo,Mujeres,Básica incompleta,4111,6514
+2023Q2,Coquimbo,Mujeres,Básica completa,6061,7258
+2023Q2,Coquimbo,Mujeres,Media incompleta,2208,3636
+2023Q2,Coquimbo,Mujeres,Media completa,1580,2183
+2023Q2,Coquimbo,Mujeres,Superior incompleta,1366,2097
+2023Q2,Coquimbo,Mujeres,Superior completa,3275,7109
+2023Q3,Coquimbo,Hombres,Sin educación,6161,9206
+2023Q3,Coquimbo,Hombres,Básica incompleta,3519,8198
+2023Q3,Coquimbo,Hombres,Básica completa,3947,8203
+2023Q3,Coquimbo,Hombres,Media incompleta,5316,7618
+2023Q3,Coquimbo,Hombres,Media completa,4554,9640
+2023Q3,Coquimbo,Hombres,Superior incompleta,8105,11520
+2023Q3,Coquimbo,Hombres,Superior completa,1591,2582
+2023Q3,Coquimbo,Mujeres,Sin educación,6072,9717
+2023Q3,Coquimbo,Mujeres,Básica incompleta,5751,7570
+2023Q3,Coquimbo,Mujeres,Básica completa,2901,5578
+2023Q3,Coquimbo,Mujeres,Media incompleta,4465,8201
+2023Q3,Coquimbo,Mujeres,Media completa,8593,9748
+2023Q3,Coquimbo,Mujeres,Superior incompleta,4405,4276
+2023Q3,Coquimbo,Mujeres,Superior completa,2830,3186
+2023Q4,Coquimbo,Hombres,Sin educación,5023,7449
+2023Q4,Coquimbo,Hombres,Básica incompleta,10520,13890
+2023Q4,Coquimbo,Hombres,Básica completa,7044,9705
+2023Q4,Coquimbo,Hombres,Media incompleta,6466,10167
+2023Q4,Coquimbo,Hombres,Media completa,2011,4090
+2023Q4,Coquimbo,Hombres,Superior incompleta,6520,11753
+2023Q4,Coquimbo,Hombres,Superior completa,5415,5628
+2023Q4,Coquimbo,Mujeres,Sin educación,3994,10637
+2023Q4,Coquimbo,Mujeres,Básica incompleta,7998,13042
+2023Q4,Coquimbo,Mujeres,Básica completa,1611,2201
+2023Q4,Coquimbo,Mujeres,Media incompleta,1701,2282
+2023Q4,Coquimbo,Mujeres,Media completa,2090,2939
+2023Q4,Coquimbo,Mujeres,Superior incompleta,4471,5883
+2023Q4,Coquimbo,Mujeres,Superior completa,4361,10212
+2024Q1,Coquimbo,Hombres,Sin educación,9748,10676
+2024Q1,Coquimbo,Hombres,Básica incompleta,4243,11741
+2024Q1,Coquimbo,Hombres,Básica completa,6480,6825
+2024Q1,Coquimbo,Hombres,Media incompleta,8622,9537
+2024Q1,Coquimbo,Hombres,Media completa,4092,7733
+2024Q1,Coquimbo,Hombres,Superior incompleta,1310,1520
+2024Q1,Coquimbo,Hombres,Superior completa,3965,5513
+2024Q1,Coquimbo,Mujeres,Sin educación,848,2039
+2024Q1,Coquimbo,Mujeres,Básica incompleta,5742,6493
+2024Q1,Coquimbo,Mujeres,Básica completa,2320,2106
+2024Q1,Coquimbo,Mujeres,Media incompleta,4685,10564
+2024Q1,Coquimbo,Mujeres,Media completa,3229,6287
+2024Q1,Coquimbo,Mujeres,Superior incompleta,3949,4707
+2024Q1,Coquimbo,Mujeres,Superior completa,3529,9521
+2024Q2,Coquimbo,Hombres,Sin educación,3078,3969
+2024Q2,Coquimbo,Hombres,Básica incompleta,1616,2079
+2024Q2,Coquimbo,Hombres,Básica completa,4614,7932
+2024Q2,Coquimbo,Hombres,Media incompleta,4108,8150
+2024Q2,Coquimbo,Hombres,Media completa,4571,11503
+2024Q2,Coquimbo,Hombres,Superior incompleta,2609,3515
+2024Q2,Coquimbo,Hombres,Superior completa,7265,10340
+2024Q2,Coquimbo,Mujeres,Sin educación,4029,7910
+2024Q2,Coquimbo,Mujeres,Básica incompleta,3175,5418
+2024Q2,Coquimbo,Mujeres,Básica completa,8668,10565
+2024Q2,Coquimbo,Mujeres,Media incompleta,2842,5477
+2024Q2,Coquimbo,Mujeres,Media completa,4214,6166
+2024Q2,Coquimbo,Mujeres,Superior incompleta,5101,6797
+2024Q2,Coquimbo,Mujeres,Superior completa,1074,1843
+2024Q3,Coquimbo,Hombres,Sin educación,2741,3866
+2024Q3,Coquimbo,Hombres,Básica incompleta,6544,7284
+2024Q3,Coquimbo,Hombres,Básica completa,6542,13995
+2024Q3,Coquimbo,Hombres,Media incompleta,8435,10254
+2024Q3,Coquimbo,Hombres,Media completa,5850,7096
+2024Q3,Coquimbo,Hombres,Superior incompleta,3322,6400
+2024Q3,Coquimbo,Hombres,Superior completa,2472,4457
+2024Q3,Coquimbo,Mujeres,Sin educación,6507,11125
+2024Q3,Coquimbo,Mujeres,Básica incompleta,2401,4034
+2024Q3,Coquimbo,Mujeres,Básica completa,10725,13180
+2024Q3,Coquimbo,Mujeres,Media incompleta,3738,5773
+2024Q3,Coquimbo,Mujeres,Media completa,7552,9226
+2024Q3,Coquimbo,Mujeres,Superior incompleta,3549,7852
+2024Q3,Coquimbo,Mujeres,Superior completa,7122,11324
+2024Q4,Coquimbo,Hombres,Sin educación,6375,12302
+2024Q4,Coquimbo,Hombres,Básica incompleta,7542,13140
+2024Q4,Coquimbo,Hombres,Básica completa,5878,8992
+2024Q4,Coquimbo,Hombres,Media incompleta,7365,11511
+2024Q4,Coquimbo,Hombres,Media completa,9118,8492
+2024Q4,Coquimbo,Hombres,Superior incompleta,2323,5815
+2024Q4,Coquimbo,Hombres,Superior completa,3878,5652
+2024Q4,Coquimbo,Mujeres,Sin educación,1180,1815
+2024Q4,Coquimbo,Mujeres,Básica incompleta,2613,3414
+2024Q4,Coquimbo,Mujeres,Básica completa,1213,3182
+2024Q4,Coquimbo,Mujeres,Media incompleta,1244,1986
+2024Q4,Coquimbo,Mujeres,Media completa,1282,1759
+2024Q4,Coquimbo,Mujeres,Superior incompleta,1676,2859
+2024Q4,Coquimbo,Mujeres,Superior completa,5486,7318
+2023Q1,Valparaíso,Hombres,Sin educación,6204,14595
+2023Q1,Valparaíso,Hombres,Básica incompleta,2065,4657
+2023Q1,Valparaíso,Hombres,Básica completa,1786,3384
+2023Q1,Valparaíso,Hombres,Media incompleta,5673,6316
+2023Q1,Valparaíso,Hombres,Media completa,7310,10590
+2023Q1,Valparaíso,Hombres,Superior incompleta,5944,8271
+2023Q1,Valparaíso,Hombres,Superior completa,4745,9654
+2023Q1,Valparaíso,Mujeres,Sin educación,4846,5175
+2023Q1,Valparaíso,Mujeres,Básica incompleta,1537,2254
+2023Q1,Valparaíso,Mujeres,Básica completa,2978,2519
+2023Q1,Valparaíso,Mujeres,Media incompleta,7320,10050
+2023Q1,Valparaíso,Mujeres,Media completa,7169,10085
+2023Q1,Valparaíso,Mujeres,Superior incompleta,4856,9153
+2023Q1,Valparaíso,Mujeres,Superior completa,4100,6477
+2023Q2,Valparaíso,Hombres,Sin educación,1111,1694
+2023Q2,Valparaíso,Hombres,Básica incompleta,4487,7696
+2023Q2,Valparaíso,Hombres,Básica completa,5594,12985
+2023Q2,Valparaíso,Hombres,Media incompleta,2155,4728
+2023Q2,Valparaíso,Hombres,Media completa,1560,2274
+2023Q2,Valparaíso,Hombres,Superior incompleta,2205,2572
+2023Q2,Valparaíso,Hombres,Superior completa,2086,1861
+2023Q2,Valparaíso,Mujeres,Sin educación,7596,7710
+2023Q2,Valparaíso,Mujeres,Básica incompleta,4684,7591
+2023Q2,Valparaíso,Mujeres,Básica completa,5345,7673
+2023Q2,Valparaíso,Mujeres,Media incompleta,2711,5396
+2023Q2,Valparaíso,Mujeres,Media completa,4414,7185
+2023Q2,Valparaíso,Mujeres,Superior incompleta,3767,6279
+2023Q2,Valparaíso,Mujeres,Superior completa,2438,3361
+2023Q3,Valparaíso,Hombres,Sin educación,2570,3251
+2023Q3,Valparaíso,Hombres,Básica incompleta,10094,10119
+2023Q3,Valparaíso,Hombres,Básica completa,5033,14427
+2023Q3,Valparaíso,Hombres,Media incompleta,1214,2169
+2023Q3,Valparaíso,Hombres,Media completa,4975,10167
+2023Q3,Valparaíso,Hombres,Superior incompleta,2475,4322
+2023Q3,Valparaíso,Hombres,Superior completa,1473,1837
+2023Q3,Valparaíso,Mujeres,Sin educación,2314,1936
+2023Q3,Valparaíso,Mujeres,Básica incompleta,6406,10303
+2023Q3,Valparaíso,Mujeres,Básica completa,3511,4775
+2023Q3,Valparaíso,Mujeres,Media incompleta,4555,7162
+2023Q3,Valparaíso,Mujeres,Media completa,6734,7451
+2023Q3,Valparaíso,Mujeres,Superior incompleta,1932,3277
+2023Q3,Valparaíso,Mujeres,Superior completa,5062,6534
+2023Q4,Valparaíso,Hombres,Sin educación,3563,3481
+2023Q4,Valparaíso,Hombres,Básica incompleta,8801,12872
+2023Q4,Valparaíso,Hombres,Básica completa,8739,12417
+2023Q4,Valparaíso,Hombres,Media incompleta,3664,10315
+2023Q4,Valparaíso,Hombres,Media completa,1596,3284
+2023Q4,Valparaíso,Hombres,Superior incompleta,5130,5551
+2023Q4,Valparaíso,Hombres,Superior completa,1575,3341
+2023Q4,Valparaíso,Mujeres,Sin educación,10297,10845
+2023Q4,Valparaíso,Mujeres,Básica incompleta,7124,7145
+2023Q4,Valparaíso,Mujeres,Básica completa,703,1605
+2023Q4,Valparaíso,Mujeres,Media incompleta,1800,3363
+2023Q4,Valparaíso,Mujeres,Media completa,2658,3827
+2023Q4,Valparaíso,Mujeres,Superior incompleta,9794,9610
+2023Q4,Valparaíso,Mujeres,Superior completa,4897,6040
+2024Q1,Valparaíso,Hombres,Sin educación,2851,3839
+2024Q1,Valparaíso,Hombres,Básica incompleta,3256,4659
+2024Q1,Valparaíso,Hombres,Básica completa,4470,10372
+2024Q1,Valparaíso,Hombres,Media incompleta,1996,3056
+2024Q1,Valparaíso,Hombres,Media completa,3436,5029
+2024Q1,Valparaíso,Hombres,Superior incompleta,898,1571
+2024Q1,Valparaíso,Hombres,Superior completa,4389,8038
+2024Q1,Valparaíso,Mujeres,Sin educación,4906,7101
+2024Q1,Valparaíso,Mujeres,Básica incompleta,6167,10574
+2024Q1,Valparaíso,Mujeres,Básica completa,5816,5282
+2024Q1,Valparaíso,Mujeres,Media incompleta,2759,6219
+2024Q1,Valparaíso,Mujeres,Media completa,4342,8339
+2024Q1,Valparaíso,Mujeres,Superior incompleta,1929,4100
+2024Q1,Valparaíso,Mujeres,Superior completa,3723,5957
+2024Q2,Valparaíso,Hombres,Sin educación,5833,7270
+2024Q2,Valparaíso,Hombres,Básica incompleta,8007,12292
+2024Q2,Valparaíso,Hombres,Básica completa,7715,9902
+2024Q2,Valparaíso,Hombres,Media incompleta,1492,1657
+2024Q2,Valparaíso,Hombres,Media completa,2764,4875
+2024Q2,Valparaíso,Hombres,Superior incompleta,7395,9274
+2024Q2,Valparaíso,Hombres,Superior completa,3221,8105
+2024Q2,Valparaíso,Mujeres,Sin educación,3057,3625
+2024Q2,Valparaíso,Mujeres,Básica incompleta,7601,10411
+2024Q2,Valparaíso,Mujeres,Básica completa,3641,5873
+2024Q2,Valparaíso,Mujeres,Media incompleta,5562,10267
+2024Q2,Valparaíso,Mujeres,Media completa,2953,4322
+2024Q2,Valparaíso,Mujeres,Superior incompleta,1129,2220
+2024Q2,Valparaíso,Mujeres,Superior completa,2143,3695
+2024Q3,Valparaíso,Hombres,Sin educación,1029,1061
+2024Q3,Valparaíso,Hombres,Básica incompleta,4964,5831
+2024Q3,Valparaíso,Hombres,Básica completa,9636,11166
+2024Q3,Valparaíso,Hombres,Media incompleta,4737,7768
+2024Q3,Valparaíso,Hombres,Media completa,5747,9220
+2024Q3,Valparaíso,Hombres,Superior incompleta,4098,7012
+2024Q3,Valparaíso,Hombres,Superior completa,2755,5015
+2024Q3,Valparaíso,Mujeres,Sin educación,2915,3632
+2024Q3,Valparaíso,Mujeres,Básica incompleta,3907,6517
+2024Q3,Valparaíso,Mujeres,Básica completa,6891,14162
+2024Q3,Valparaíso,Mujeres,Media incompleta,2399,4169
+2024Q3,Valparaíso,Mujeres,Media completa,6276,8350
+2024Q3,Valparaíso,Mujeres,Superior incompleta,4274,7689
+2024Q3,Valparaíso,Mujeres,Superior completa,4348,5665
+2024Q4,Valparaíso,Hombres,Sin educación,1432,2738
+2024Q4,Valparaíso,Hombres,Básica incompleta,1663,2277
+2024Q4,Valparaíso,Hombres,Básica completa,1713,2245
+2024Q4,Valparaíso,Hombres,Media incompleta,3974,4701
+2024Q4,Valparaíso,Hombres,Media completa,4552,5469
+2024Q4,Valparaíso,Hombres,Superior incompleta,3893,10394
+2024Q4,Valparaíso,Hombres,Superior completa,8151,9101
+2024Q4,Valparaíso,Mujeres,Sin educación,822,1273
+2024Q4,Valparaíso,Mujeres,Básica incompleta,1800,3301
+2024Q4,Valparaíso,Mujeres,Básica completa,3580,5152
+2024Q4,Valparaíso,Mujeres,Media incompleta,3493,4682
+2024Q4,Valparaíso,Mujeres,Media completa,3410,6876
+2024Q4,Valparaíso,Mujeres,Superior incompleta,6728,7339
+2024Q4,Valparaíso,Mujeres,Superior completa,1987,4811
+2023Q1,O’Higgins,Hombres,Sin educación,5419,5398
+2023Q1,O’Higgins,Hombres,Básica incompleta,2559,4342
+2023Q1,O’Higgins,Hombres,Básica completa,6626,9768
+2023Q1,O’Higgins,Hombres,Media incompleta,2437,5348
+2023Q1,O’Higgins,Hombres,Media completa,1912,4393
+2023Q1,O’Higgins,Hombres,Superior incompleta,6780,8734
+2023Q1,O’Higgins,Hombres,Superior completa,3231,2961
+2023Q1,O’Higgins,Mujeres,Sin educación,1730,2332
+2023Q1,O’Higgins,Mujeres,Básica incompleta,4735,6615
+2023Q1,O’Higgins,Mujeres,Básica completa,2658,5533
+2023Q1,O’Higgins,Mujeres,Media incompleta,2582,4509
+2023Q1,O’Higgins,Mujeres,Media completa,5086,6020
+2023Q1,O’Higgins,Mujeres,Superior incompleta,3235,4546
+2023Q1,O’Higgins,Mujeres,Superior completa,4074,6499
+2023Q2,O’Higgins,Hombres,Sin educación,3450,3771
+2023Q2,O’Higgins,Hombres,Básica incompleta,1674,2237
+2023Q2,O’Higgins,Hombres,Básica completa,5007,10371
+2023Q2,O’Higgins,Hombres,Media incompleta,5621,14296
+2023Q2,O’Higgins,Hombres,Media completa,2856,6262
+2023Q2,O’Higgins,Hombres,Superior incompleta,4313,6245
+2023Q2,O’Higgins,Hombres,Superior completa,1987,2313
+2023Q2,O’Higgins,Mujeres,Sin educación,2580,4062
+2023Q2,O’Higgins,Mujeres,Básica incompleta,7664,9305
+2023Q2,O’Higgins,Mujeres,Básica completa,2786,3719
+2023Q2,O’Higgins,Mujeres,Media incompleta,2277,3487
+2023Q2,O’Higgins,Mujeres,Media completa,3610,3944
+2023Q2,O’Higgins,Mujeres,Superior incompleta,3846,3939
+2023Q2,O’Higgins,Mujeres,Superior completa,8829,11164
+2023Q3,O’Higgins,Hombres,Sin educación,1069,1698
+2023Q3,O’Higgins,Hombres,Básica incompleta,987,1397
+2023Q3,O’Higgins,Hombres,Básica completa,8495,9955
+2023Q3,O’Higgins,Hombres,Media incompleta,853,1550
+2023Q3,O’Higgins,Hombres,Media completa,1075,2009
+2023Q3,O’Higgins,Hombres,Superior incompleta,1447,3285
+2023Q3,O’Higgins,Hombres,Superior completa,2186,4512
+2023Q3,O’Higgins,Mujeres,Sin educación,3066,6352
+2023Q3,O’Higgins,Mujeres,Básica incompleta,9133,11619
+2023Q3,O’Higgins,Mujeres,Básica completa,1058,1289
+2023Q3,O’Higgins,Mujeres,Media incompleta,3015,4075
+2023Q3,O’Higgins,Mujeres,Media completa,3761,6978
+2023Q3,O’Higgins,Mujeres,Superior incompleta,1018,1459
+2023Q3,O’Higgins,Mujeres,Superior completa,3663,6073
+2023Q4,O’Higgins,Hombres,Sin educación,1788,3407
+2023Q4,O’Higgins,Hombres,Básica incompleta,5173,10118
+2023Q4,O’Higgins,Hombres,Básica completa,4347,6171
+2023Q4,O’Higgins,Hombres,Media incompleta,9541,10803
+2023Q4,O’Higgins,Hombres,Media completa,7971,10211
+2023Q4,O’Higgins,Hombres,Superior incompleta,2946,5335
+2023Q4,O’Higgins,Hombres,Superior completa,1481,2571
+2023Q4,O’Higgins,Mujeres,Sin educación,1228,2838
+2023Q4,O’Higgins,Mujeres,Básica incompleta,5474,10531
+2023Q4,O’Higgins,Mujeres,Básica completa,3150,4234
+2023Q4,O’Higgins,Mujeres,Media incompleta,4912,7447
+2023Q4,O’Higgins,Mujeres,Media completa,2806,3531
+2023Q4,O’Higgins,Mujeres,Superior incompleta,4598,4584
+2023Q4,O’Higgins,Mujeres,Superior completa,1595,2239
+2024Q1,O’Higgins,Hombres,Sin educación,4515,7302
+2024Q1,O’Higgins,Hombres,Básica incompleta,5243,7206
+2024Q1,O’Higgins,Hombres,Básica completa,4816,6144
+2024Q1,O’Higgins,Hombres,Media incompleta,4339,5030
+2024Q1,O’Higgins,Hombres,Media completa,6264,7218
+2024Q1,O’Higgins,Hombres,Superior incompleta,6644,13770
+2024Q1,O’Higgins,Hombres,Superior completa,5147,8249
+2024Q1,O’Higgins,Mujeres,Sin educación,7973,13468
+2024Q1,O’Higgins,Mujeres,Básica incompleta,2357,2912
+2024Q1,O’Higgins,Mujeres,Básica completa,681,2007
+2024Q1,O’Higgins,Mujeres,Media incompleta,9242,9490
+2024Q1,O’Higgins,Mujeres,Media completa,4293,8917
+2024Q1,O’Higgins,Mujeres,Superior incompleta,9045,12031
+2024Q1,O’Higgins,Mujeres,Superior completa,5788,8870
+2024Q2,O’Higgins,Hombres,Sin educación,5260,8537
+2024Q2,O’Higgins,Hombres,Básica incompleta,4359,10054
+2024Q2,O’Higgins,Hombres,Básica completa,5628,10784
+2024Q2,O’Higgins,Hombres,Media incompleta,5165,7849
+2024Q2,O’Higgins,Hombres,Media completa,3632,6632
+2024Q2,O’Higgins,Hombres,Superior incompleta,3353,5652
+2024Q2,O’Higgins,Hombres,Superior completa,1579,3118
+2024Q2,O’Higgins,Mujeres,Sin educación,2826,3851
+2024Q2,O’Higgins,Mujeres,Básica incompleta,10347,9066
+2024Q2,O’Higgins,Mujeres,Básica completa,5903,6158
+2024Q2,O’Higgins,Mujeres,Media incompleta,2401,3528
+2024Q2,O’Higgins,Mujeres,Media completa,4915,8929
+2024Q2,O’Higgins,Mujeres,Superior incompleta,2935,4330
+2024Q2,O’Higgins,Mujeres,Superior completa,5965,5744
+2024Q3,O’Higgins,Hombres,Sin educación,9222,13159
+2024Q3,O’Higgins,Hombres,Básica incompleta,6049,8596
+2024Q3,O’Higgins,Hombres,Básica completa,2780,4270
+2024Q3,O’Higgins,Hombres,Media incompleta,6878,11154
+2024Q3,O’Higgins,Hombres,Media completa,5439,5787
+2024Q3,O’Higgins,Hombres,Superior incompleta,1718,1724
+2024Q3,O’Higgins,Hombres,Superior completa,7208,9205
+2024Q3,O’Higgins,Mujeres,Sin educación,1128,1757
+2024Q3,O’Higgins,Mujeres,Básica incompleta,5055,8240
+2024Q3,O’Higgins,Mujeres,Básica completa,5086,9362
+2024Q3,O’Higgins,Mujeres,Media incompleta,3614,5454
+2024Q3,O’Higgins,Mujeres,Media completa,928,1362
+2024Q3,O’Higgins,Mujeres,Superior incompleta,5254,6223
+2024Q3,O’Higgins,Mujeres,Superior completa,6738,9899
+2024Q4,O’Higgins,Hombres,Sin educación,2219,4947
+2024Q4,O’Higgins,Hombres,Básica incompleta,4683,6058
+2024Q4,O’Higgins,Hombres,Básica completa,3138,3934
+2024Q4,O’Higgins,Hombres,Media incompleta,981,2520
+2024Q4,O’Higgins,Hombres,Media completa,6329,8407
+2024Q4,O’Higgins,Hombres,Superior incompleta,3632,7713
+2024Q4,O’Higgins,Hombres,Superior completa,9249,9245
+2024Q4,O’Higgins,Mujeres,Sin educación,2043,2516
+2024Q4,O’Higgins,Mujeres,Básica incompleta,7685,11418
+2024Q4,O’Higgins,Mujeres,Básica completa,3618,4729
+2024Q4,O’Higgins,Mujeres,Media incompleta,6032,6424
+2024Q4,O’Higgins,Mujeres,Media completa,10031,10266
+2024Q4,O’Higgins,Mujeres,Superior incompleta,3057,6907
+2024Q4,O’Higgins,Mujeres,Superior completa,9260,11537
+2023Q1,Maule,Hombres,Sin educación,8900,12344
+2023Q1,Maule,Hombres,Básica incompleta,2268,3288
+2023Q1,Maule,Hombres,Básica completa,4920,7582
+2023Q1,Maule,Hombres,Media incompleta,4628,6300
+2023Q1,Maule,Hombres,Media completa,3768,7934
+2023Q1,Maule,Hombres,Superior incompleta,2246,3547
+2023Q1,Maule,Hombres,Superior completa,719,1483
+2023Q1,Maule,Mujeres,Sin educación,6395,13074
+2023Q1,Maule,Mujeres,Básica incompleta,5957,6276
+2023Q1,Maule,Mujeres,Básica completa,4371,5075
+2023Q1,Maule,Mujeres,Media incompleta,2023,2872
+2023Q1,Maule,Mujeres,Media completa,7330,10257
+2023Q1,Maule,Mujeres,Superior incompleta,7651,10009
+2023Q1,Maule,Mujeres,Superior completa,7162,7905
+2023Q2,Maule,Hombres,Sin educación,5232,7355
+2023Q2,Maule,Hombres,Básica incompleta,2960,5528
+2023Q2,Maule,Hombres,Básica completa,1153,2069
+2023Q2,Maule,Hombres,Media incompleta,4301,5870
+2023Q2,Maule,Hombres,Media completa,4354,5377
+2023Q2,Maule,Hombres,Superior incompleta,8765,10729
+2023Q2,Maule,Hombres,Superior completa,3378,8410
+2023Q2,Maule,Mujeres,Sin educación,7796,9829
+2023Q2,Maule,Mujeres,Básica incompleta,997,2134
+2023Q2,Maule,Mujeres,Básica completa,2138,2780
+2023Q2,Maule,Mujeres,Media incompleta,8260,10643
+2023Q2,Maule,Mujeres,Media completa,1066,1233
+2023Q2,Maule,Mujeres,Superior incompleta,2378,2694
+2023Q2,Maule,Mujeres,Superior completa,2584,3103
+2023Q3,Maule,Hombres,Sin educación,1538,2127
+2023Q3,Maule,Hombres,Básica incompleta,6126,10040
+2023Q3,Maule,Hombres,Básica completa,6156,7759
+2023Q3,Maule,Hombres,Media incompleta,5533,12433
+2023Q3,Maule,Hombres,Media completa,4812,6013
+2023Q3,Maule,Hombres,Superior incompleta,1108,2423
+2023Q3,Maule,Hombres,Superior completa,4078,6910
+2023Q3,Maule,Mujeres,Sin educación,6860,10129
+2023Q3,Maule,Mujeres,Básica incompleta,3642,5579
+2023Q3,Maule,Mujeres,Básica completa,1392,2176
+2023Q3,Maule,Mujeres,Media incompleta,1181,1319
+2023Q3,Maule,Mujeres,Media completa,4521,5255
+2023Q3,Maule,Mujeres,Superior incompleta,1756,2131
+2023Q3,Maule,Mujeres,Superior completa,4056,8579
+2023Q4,Maule,Hombres,Sin educación,6844,6991
+2023Q4,Maule,Hombres,Básica incompleta,2466,3861
+2023Q4,Maule,Hombres,Básica completa,1227,1818
+2023Q4,Maule,Hombres,Media incompleta,2108,3188
+2023Q4,Maule,Hombres,Media completa,4069,5463
+2023Q4,Maule,Hombres,Superior incompleta,5931,12802
+2023Q4,Maule,Hombres,Superior completa,3470,8078
+2023Q4,Maule,Mujeres,Sin educación,1802,2442
+2023Q4,Maule,Mujeres,Básica incompleta,3016,6847
+2023Q4,Maule,Mujeres,Básica completa,3258,8775
+2023Q4,Maule,Mujeres,Media incompleta,681,1574
+2023Q4,Maule,Mujeres,Media completa,6088,5599
+2023Q4,Maule,Mujeres,Superior incompleta,9998,13182
+2023Q4,Maule,Mujeres,Superior completa,6078,8736
+2024Q1,Maule,Hombres,Sin educación,7702,11092
+2024Q1,Maule,Hombres,Básica incompleta,3613,5408
+2024Q1,Maule,Hombres,Básica completa,4530,7480
+2024Q1,Maule,Hombres,Media incompleta,3226,4315
+2024Q1,Maule,Hombres,Media completa,3943,7787
+2024Q1,Maule,Hombres,Superior incompleta,7123,8387
+2024Q1,Maule,Hombres,Superior completa,1064,1393
+2024Q1,Maule,Mujeres,Sin educación,1187,2559
+2024Q1,Maule,Mujeres,Básica incompleta,1945,3747
+2024Q1,Maule,Mujeres,Básica completa,985,1322
+2024Q1,Maule,Mujeres,Media incompleta,1722,3586
+2024Q1,Maule,Mujeres,Media completa,6481,9781
+2024Q1,Maule,Mujeres,Superior incompleta,1163,1553
+2024Q1,Maule,Mujeres,Superior completa,5542,8867
+2024Q2,Maule,Hombres,Sin educación,1339,2525
+2024Q2,Maule,Hombres,Básica incompleta,3376,6172
+2024Q2,Maule,Hombres,Básica completa,3184,6329
+2024Q2,Maule,Hombres,Media incompleta,2305,4696
+2024Q2,Maule,Hombres,Media completa,3942,4797
+2024Q2,Maule,Hombres,Superior incompleta,5661,11991
+2024Q2,Maule,Hombres,Superior completa,8603,11402
+2024Q2,Maule,Mujeres,Sin educación,3852,4502
+2024Q2,Maule,Mujeres,Básica incompleta,5951,12181
+2024Q2,Maule,Mujeres,Básica completa,8773,11649
+2024Q2,Maule,Mujeres,Media incompleta,5526,9088
+2024Q2,Maule,Mujeres,Media completa,4097,5764
+2024Q2,Maule,Mujeres,Superior incompleta,4571,9511
+2024Q2,Maule,Mujeres,Superior completa,4501,8909
+2024Q3,Maule,Hombres,Sin educación,2108,5581
+2024Q3,Maule,Hombres,Básica incompleta,7587,10580
+2024Q3,Maule,Hombres,Básica completa,2018,3848
+2024Q3,Maule,Hombres,Media incompleta,4501,6303
+2024Q3,Maule,Hombres,Media completa,1419,1638
+2024Q3,Maule,Hombres,Superior incompleta,6072,6846
+2024Q3,Maule,Hombres,Superior completa,1648,1859
+2024Q3,Maule,Mujeres,Sin educación,3008,8227
+2024Q3,Maule,Mujeres,Básica incompleta,6207,8871
+2024Q3,Maule,Mujeres,Básica completa,3264,5853
+2024Q3,Maule,Mujeres,Media incompleta,4257,6037
+2024Q3,Maule,Mujeres,Media completa,8119,12013
+2024Q3,Maule,Mujeres,Superior incompleta,4646,8733
+2024Q3,Maule,Mujeres,Superior completa,1012,1652
+2024Q4,Maule,Hombres,Sin educación,4305,6958
+2024Q4,Maule,Hombres,Básica incompleta,7190,6999
+2024Q4,Maule,Hombres,Básica completa,4878,4251
+2024Q4,Maule,Hombres,Media incompleta,3414,4041
+2024Q4,Maule,Hombres,Media completa,3157,5799
+2024Q4,Maule,Hombres,Superior incompleta,5146,8757
+2024Q4,Maule,Hombres,Superior completa,4476,5519
+2024Q4,Maule,Mujeres,Sin educación,3162,3526
+2024Q4,Maule,Mujeres,Básica incompleta,5219,13796
+2024Q4,Maule,Mujeres,Básica completa,2343,4114
+2024Q4,Maule,Mujeres,Media incompleta,2457,3518
+2024Q4,Maule,Mujeres,Media completa,1970,3990
+2024Q4,Maule,Mujeres,Superior incompleta,2060,4739
+2024Q4,Maule,Mujeres,Superior completa,1169,2038
+2023Q1,Ñuble,Hombres,Sin educación,9510,11103
+2023Q1,Ñuble,Hombres,Básica incompleta,4508,10014
+2023Q1,Ñuble,Hombres,Básica completa,5057,7700
+2023Q1,Ñuble,Hombres,Media incompleta,6653,7776
+2023Q1,Ñuble,Hombres,Media completa,2944,5987
+2023Q1,Ñuble,Hombres,Superior incompleta,1482,1345
+2023Q1,Ñuble,Hombres,Superior completa,3796,10076
+2023Q1,Ñuble,Mujeres,Sin educación,714,1939
+2023Q1,Ñuble,Mujeres,Básica incompleta,4540,9024
+2023Q1,Ñuble,Mujeres,Básica completa,5269,11934
+2023Q1,Ñuble,Mujeres,Media incompleta,1395,1383
+2023Q1,Ñuble,Mujeres,Media completa,4724,9207
+2023Q1,Ñuble,Mujeres,Superior incompleta,3554,5156
+2023Q1,Ñuble,Mujeres,Superior completa,1644,1740
+2023Q2,Ñuble,Hombres,Sin educación,4228,7027
+2023Q2,Ñuble,Hombres,Básica incompleta,4976,6483
+2023Q2,Ñuble,Hombres,Básica completa,5634,9626
+2023Q2,Ñuble,Hombres,Media incompleta,4185,5556
+2023Q2,Ñuble,Hombres,Media completa,1694,2668
+2023Q2,Ñuble,Hombres,Superior incompleta,2144,4617
+2023Q2,Ñuble,Hombres,Superior completa,4248,5852
+2023Q2,Ñuble,Mujeres,Sin educación,1398,2694
+2023Q2,Ñuble,Mujeres,Básica incompleta,1272,2854
+2023Q2,Ñuble,Mujeres,Básica completa,5944,7131
+2023Q2,Ñuble,Mujeres,Media incompleta,4412,7067
+2023Q2,Ñuble,Mujeres,Media completa,4295,4312
+2023Q2,Ñuble,Mujeres,Superior incompleta,7403,9786
+2023Q2,Ñuble,Mujeres,Superior completa,1450,2062
+2023Q3,Ñuble,Hombres,Sin educación,6038,7478
+2023Q3,Ñuble,Hombres,Básica incompleta,5384,13186
+2023Q3,Ñuble,Hombres,Básica completa,4719,8115
+2023Q3,Ñuble,Hombres,Media incompleta,8511,10655
+2023Q3,Ñuble,Hombres,Media completa,7697,9928
+2023Q3,Ñuble,Hombres,Superior incompleta,5945,8288
+2023Q3,Ñuble,Hombres,Superior completa,1471,1827
+2023Q3,Ñuble,Mujeres,Sin educación,6891,11714
+2023Q3,Ñuble,Mujeres,Básica incompleta,4609,5338
+2023Q3,Ñuble,Mujeres,Básica completa,1000,1198
+2023Q3,Ñuble,Mujeres,Media incompleta,3554,8273
+2023Q3,Ñuble,Mujeres,Media completa,5467,8384
+2023Q3,Ñuble,Mujeres,Superior incompleta,4746,9623
+2023Q3,Ñuble,Mujeres,Superior completa,1187,3071
+2023Q4,Ñuble,Hombres,Sin educación,3936,5853
+2023Q4,Ñuble,Hombres,Básica incompleta,1386,2075
+2023Q4,Ñuble,Hombres,Básica completa,6226,9600
+2023Q4,Ñuble,Hombres,Media incompleta,4411,6808
+2023Q4,Ñuble,Hombres,Media completa,7426,10932
+2023Q4,Ñuble,Hombres,Superior incompleta,3760,4175
+2023Q4,Ñuble,Hombres,Superior completa,3792,5881
+2023Q4,Ñuble,Mujeres,Sin educación,825,1242
+2023Q4,Ñuble,Mujeres,Básica incompleta,5237,6435
+2023Q4,Ñuble,Mujeres,Básica completa,1541,2719
+2023Q4,Ñuble,Mujeres,Media incompleta,3066,4179
+2023Q4,Ñuble,Mujeres,Media completa,4742,6178
+2023Q4,Ñuble,Mujeres,Superior incompleta,1443,2854
+2023Q4,Ñuble,Mujeres,Superior completa,6781,7145
+2024Q1,Ñuble,Hombres,Sin educación,6617,10328
+2024Q1,Ñuble,Hombres,Básica incompleta,6598,8846
+2024Q1,Ñuble,Hombres,Básica completa,1436,1710
+2024Q1,Ñuble,Hombres,Media incompleta,6830,6834
+2024Q1,Ñuble,Hombres,Media completa,1067,2286
+2024Q1,Ñuble,Hombres,Superior incompleta,9672,13139
+2024Q1,Ñuble,Hombres,Superior completa,3679,4022
+2024Q1,Ñuble,Mujeres,Sin educación,6343,8365
+2024Q1,Ñuble,Mujeres,Básica incompleta,3770,5735
+2024Q1,Ñuble,Mujeres,Básica completa,1629,2687
+2024Q1,Ñuble,Mujeres,Media incompleta,1724,3210
+2024Q1,Ñuble,Mujeres,Media completa,6695,10091
+2024Q1,Ñuble,Mujeres,Superior incompleta,3480,5634
+2024Q1,Ñuble,Mujeres,Superior completa,4737,7976
+2024Q2,Ñuble,Hombres,Sin educación,2209,3147
+2024Q2,Ñuble,Hombres,Básica incompleta,5662,8682
+2024Q2,Ñuble,Hombres,Básica completa,8297,7910
+2024Q2,Ñuble,Hombres,Media incompleta,1233,2058
+2024Q2,Ñuble,Hombres,Media completa,2703,2895
+2024Q2,Ñuble,Hombres,Superior incompleta,6389,10030
+2024Q2,Ñuble,Hombres,Superior completa,4652,7156
+2024Q2,Ñuble,Mujeres,Sin educación,4437,10706
+2024Q2,Ñuble,Mujeres,Básica incompleta,3406,6295
+2024Q2,Ñuble,Mujeres,Básica completa,2682,3604
+2024Q2,Ñuble,Mujeres,Media incompleta,6351,8330
+2024Q2,Ñuble,Mujeres,Media completa,4986,7313
+2024Q2,Ñuble,Mujeres,Superior incompleta,3497,7083
+2024Q2,Ñuble,Mujeres,Superior completa,8094,8114
+2024Q3,Ñuble,Hombres,Sin educación,1098,1497
+2024Q3,Ñuble,Hombres,Básica incompleta,925,1441
+2024Q3,Ñuble,Hombres,Básica completa,2195,2482
+2024Q3,Ñuble,Hombres,Media incompleta,1961,4312
+2024Q3,Ñuble,Hombres,Media completa,3865,4848
+2024Q3,Ñuble,Hombres,Superior incompleta,7373,10707
+2024Q3,Ñuble,Hombres,Superior completa,2318,2598
+2024Q3,Ñuble,Mujeres,Sin educación,10375,11214
+2024Q3,Ñuble,Mujeres,Básica incompleta,1975,3380
+2024Q3,Ñuble,Mujeres,Básica completa,1811,2252
+2024Q3,Ñuble,Mujeres,Media incompleta,2081,2690
+2024Q3,Ñuble,Mujeres,Media completa,5226,11361
+2024Q3,Ñuble,Mujeres,Superior incompleta,2921,5268
+2024Q3,Ñuble,Mujeres,Superior completa,974,2350
+2024Q4,Ñuble,Hombres,Sin educación,6757,9040
+2024Q4,Ñuble,Hombres,Básica incompleta,5031,6307
+2024Q4,Ñuble,Hombres,Básica completa,1694,2150
+2024Q4,Ñuble,Hombres,Media incompleta,4479,6009
+2024Q4,Ñuble,Hombres,Media completa,3452,4628
+2024Q4,Ñuble,Hombres,Superior incompleta,4278,4916
+2024Q4,Ñuble,Hombres,Superior completa,2211,3713
+2024Q4,Ñuble,Mujeres,Sin educación,4040,8430
+2024Q4,Ñuble,Mujeres,Básica incompleta,3850,5078
+2024Q4,Ñuble,Mujeres,Básica completa,2562,5438
+2024Q4,Ñuble,Mujeres,Media incompleta,2749,4710
+2024Q4,Ñuble,Mujeres,Media completa,4663,6972
+2024Q4,Ñuble,Mujeres,Superior incompleta,9666,8547
+2024Q4,Ñuble,Mujeres,Superior completa,4245,6037
+2023Q1,Biobío,Hombres,Sin educación,6452,6314
+2023Q1,Biobío,Hombres,Básica incompleta,7269,7158
+2023Q1,Biobío,Hombres,Básica completa,1349,1666
+2023Q1,Biobío,Hombres,Media incompleta,3909,7005
+2023Q1,Biobío,Hombres,Media completa,3475,3642
+2023Q1,Biobío,Hombres,Superior incompleta,7794,11032
+2023Q1,Biobío,Hombres,Superior completa,1308,1731
+2023Q1,Biobío,Mujeres,Sin educación,3894,3648
+2023Q1,Biobío,Mujeres,Básica incompleta,3637,4354
+2023Q1,Biobío,Mujeres,Básica completa,7784,7915
+2023Q1,Biobío,Mujeres,Media incompleta,1260,2616
+2023Q1,Biobío,Mujeres,Media completa,2969,6473
+2023Q1,Biobío,Mujeres,Superior incompleta,7824,12330
+2023Q1,Biobío,Mujeres,Superior completa,8779,9646
+2023Q2,Biobío,Hombres,Sin educación,2906,4882
+2023Q2,Biobío,Hombres,Básica incompleta,5330,9636
+2023Q2,Biobío,Hombres,Básica completa,1517,1762
+2023Q2,Biobío,Hombres,Media incompleta,3523,7807
+2023Q2,Biobío,Hombres,Media completa,1494,2846
+2023Q2,Biobío,Hombres,Superior incompleta,7582,10887
+2023Q2,Biobío,Hombres,Superior completa,2120,2153
+2023Q2,Biobío,Mujeres,Sin educación,5771,10958
+2023Q2,Biobío,Mujeres,Básica incompleta,7792,9345
+2023Q2,Biobío,Mujeres,Básica completa,6275,7897
+2023Q2,Biobío,Mujeres,Media incompleta,2406,2954
+2023Q2,Biobío,Mujeres,Media completa,2851,4380
+2023Q2,Biobío,Mujeres,Superior incompleta,6658,9614
+2023Q2,Biobío,Mujeres,Superior completa,4822,5285
+2023Q3,Biobío,Hombres,Sin educación,2042,4403
+2023Q3,Biobío,Hombres,Básica incompleta,10495,13628
+2023Q3,Biobío,Hombres,Básica completa,3206,4060
+2023Q3,Biobío,Hombres,Media incompleta,4921,7815
+2023Q3,Biobío,Hombres,Media completa,4019,7726
+2023Q3,Biobío,Hombres,Superior incompleta,831,2020
+2023Q3,Biobío,Hombres,Superior completa,5753,7846
+2023Q3,Biobío,Mujeres,Sin educación,5691,8974
+2023Q3,Biobío,Mujeres,Básica incompleta,6712,9659
+2023Q3,Biobío,Mujeres,Básica completa,4210,6943
+2023Q3,Biobío,Mujeres,Media incompleta,8420,10838
+2023Q3,Biobío,Mujeres,Media completa,5255,6825
+2023Q3,Biobío,Mujeres,Superior incompleta,4072,4754
+2023Q3,Biobío,Mujeres,Superior completa,1641,1693
+2023Q4,Biobío,Hombres,Sin educación,4904,5578
+2023Q4,Biobío,Hombres,Básica incompleta,2428,3874
+2023Q4,Biobío,Hombres,Básica completa,2533,3678
+2023Q4,Biobío,Hombres,Media incompleta,1986,2250
+2023Q4,Biobío,Hombres,Media completa,5825,12012
+2023Q4,Biobío,Hombres,Superior incompleta,6809,8134
+2023Q4,Biobío,Hombres,Superior completa,4763,5808
+2023Q4,Biobío,Mujeres,Sin educación,3607,4211
+2023Q4,Biobío,Mujeres,Básica incompleta,660,1752
+2023Q4,Biobío,Mujeres,Básica completa,4134,5983
+2023Q4,Biobío,Mujeres,Media incompleta,7154,7712
+2023Q4,Biobío,Mujeres,Media completa,7960,11127
+2023Q4,Biobío,Mujeres,Superior incompleta,5370,6125
+2023Q4,Biobío,Mujeres,Superior completa,4019,6624
+2024Q1,Biobío,Hombres,Sin educación,1277,1891
+2024Q1,Biobío,Hombres,Básica incompleta,1773,1998
+2024Q1,Biobío,Hombres,Básica completa,9216,9627
+2024Q1,Biobío,Hombres,Media incompleta,4915,5538
+2024Q1,Biobío,Hombres,Media completa,7787,9828
+2024Q1,Biobío,Hombres,Superior incompleta,4428,7200
+2024Q1,Biobío,Hombres,Superior completa,5360,5266
+2024Q1,Biobío,Mujeres,Sin educación,3273,8592
+2024Q1,Biobío,Mujeres,Básica incompleta,3514,4658
+2024Q1,Biobío,Mujeres,Básica completa,2518,4044
+2024Q1,Biobío,Mujeres,Media incompleta,2540,4180
+2024Q1,Biobío,Mujeres,Media completa,7440,7093
+2024Q1,Biobío,Mujeres,Superior incompleta,1100,2832
+2024Q1,Biobío,Mujeres,Superior completa,3096,5136
+2024Q2,Biobío,Hombres,Sin educación,5233,6093
+2024Q2,Biobío,Hombres,Básica incompleta,4870,9270
+2024Q2,Biobío,Hombres,Básica completa,1387,1621
+2024Q2,Biobío,Hombres,Media incompleta,8938,12928
+2024Q2,Biobío,Hombres,Media completa,4617,6741
+2024Q2,Biobío,Hombres,Superior incompleta,2100,1934
+2024Q2,Biobío,Hombres,Superior completa,1197,2185
+2024Q2,Biobío,Mujeres,Sin educación,2065,2947
+2024Q2,Biobío,Mujeres,Básica incompleta,6284,6174
+2024Q2,Biobío,Mujeres,Básica completa,8568,12134
+2024Q2,Biobío,Mujeres,Media incompleta,5494,10074
+2024Q2,Biobío,Mujeres,Media completa,5119,7808
+2024Q2,Biobío,Mujeres,Superior incompleta,2213,2620
+2024Q2,Biobío,Mujeres,Superior completa,4936,12174
+2024Q3,Biobío,Hombres,Sin educación,9585,10968
+2024Q3,Biobío,Hombres,Básica incompleta,8784,8189
+2024Q3,Biobío,Hombres,Básica completa,8027,11939
+2024Q3,Biobío,Hombres,Media incompleta,7095,8626
+2024Q3,Biobío,Hombres,Media completa,2270,4625
+2024Q3,Biobío,Hombres,Superior incompleta,3426,6405
+2024Q3,Biobío,Hombres,Superior completa,1694,3895
+2024Q3,Biobío,Mujeres,Sin educación,6061,11271
+2024Q3,Biobío,Mujeres,Básica incompleta,5434,8618
+2024Q3,Biobío,Mujeres,Básica completa,3930,3554
+2024Q3,Biobío,Mujeres,Media incompleta,6577,6300
+2024Q3,Biobío,Mujeres,Media completa,6950,10361
+2024Q3,Biobío,Mujeres,Superior incompleta,2352,2497
+2024Q3,Biobío,Mujeres,Superior completa,5346,10244
+2024Q4,Biobío,Hombres,Sin educación,4533,6868
+2024Q4,Biobío,Hombres,Básica incompleta,2627,4478
+2024Q4,Biobío,Hombres,Básica completa,6223,9814
+2024Q4,Biobío,Hombres,Media incompleta,1350,2798
+2024Q4,Biobío,Hombres,Media completa,6181,10697
+2024Q4,Biobío,Hombres,Superior incompleta,5641,7985
+2024Q4,Biobío,Hombres,Superior completa,7160,10451
+2024Q4,Biobío,Mujeres,Sin educación,1939,2892
+2024Q4,Biobío,Mujeres,Básica incompleta,7620,8224
+2024Q4,Biobío,Mujeres,Básica completa,2588,6401
+2024Q4,Biobío,Mujeres,Media incompleta,691,1696
+2024Q4,Biobío,Mujeres,Media completa,1468,2636
+2024Q4,Biobío,Mujeres,Superior incompleta,2857,3160
+2024Q4,Biobío,Mujeres,Superior completa,2489,3613
+2023Q1,La Araucanía,Hombres,Sin educación,827,1336
+2023Q1,La Araucanía,Hombres,Básica incompleta,5138,7040
+2023Q1,La Araucanía,Hombres,Básica completa,7305,14404
+2023Q1,La Araucanía,Hombres,Media incompleta,2719,7409
+2023Q1,La Araucanía,Hombres,Media completa,2846,4574
+2023Q1,La Araucanía,Hombres,Superior incompleta,1897,4197
+2023Q1,La Araucanía,Hombres,Superior completa,2896,5178
+2023Q1,La Araucanía,Mujeres,Sin educación,4765,6825
+2023Q1,La Araucanía,Mujeres,Básica incompleta,6919,6850
+2023Q1,La Araucanía,Mujeres,Básica completa,1789,2836
+2023Q1,La Araucanía,Mujeres,Media incompleta,3589,4838
+2023Q1,La Araucanía,Mujeres,Media completa,8240,10264
+2023Q1,La Araucanía,Mujeres,Superior incompleta,7715,9079
+2023Q1,La Araucanía,Mujeres,Superior completa,9715,12912
+2023Q2,La Araucanía,Hombres,Sin educación,6916,6012
+2023Q2,La Araucanía,Hombres,Básica incompleta,1960,3319
+2023Q2,La Araucanía,Hombres,Básica completa,6130,9963
+2023Q2,La Araucanía,Hombres,Media incompleta,1816,1983
+2023Q2,La Araucanía,Hombres,Media completa,2986,3784
+2023Q2,La Araucanía,Hombres,Superior incompleta,7001,12085
+2023Q2,La Araucanía,Hombres,Superior completa,5162,10452
+2023Q2,La Araucanía,Mujeres,Sin educación,7501,10353
+2023Q2,La Araucanía,Mujeres,Básica incompleta,4491,8345
+2023Q2,La Araucanía,Mujeres,Básica completa,3417,5932
+2023Q2,La Araucanía,Mujeres,Media incompleta,6516,12773
+2023Q2,La Araucanía,Mujeres,Media completa,4229,3745
+2023Q2,La Araucanía,Mujeres,Superior incompleta,2765,5560
+2023Q2,La Araucanía,Mujeres,Superior completa,1224,2491
+2023Q3,La Araucanía,Hombres,Sin educación,5753,9254
+2023Q3,La Araucanía,Hombres,Básica incompleta,3954,5543
+2023Q3,La Araucanía,Hombres,Básica completa,5326,8640
+2023Q3,La Araucanía,Hombres,Media incompleta,5860,6325
+2023Q3,La Araucanía,Hombres,Media completa,1883,1896
+2023Q3,La Araucanía,Hombres,Superior incompleta,6989,8950
+2023Q3,La Araucanía,Hombres,Superior completa,2469,2944
+2023Q3,La Araucanía,Mujeres,Sin educación,9308,9062
+2023Q3,La Araucanía,Mujeres,Básica incompleta,2253,3811
+2023Q3,La Araucanía,Mujeres,Básica completa,6128,7889
+2023Q3,La Araucanía,Mujeres,Media incompleta,5136,4634
+2023Q3,La Araucanía,Mujeres,Media completa,5474,12759
+2023Q3,La Araucanía,Mujeres,Superior incompleta,8297,10982
+2023Q3,La Araucanía,Mujeres,Superior completa,4590,5925
+2023Q4,La Araucanía,Hombres,Sin educación,4992,8962
+2023Q4,La Araucanía,Hombres,Básica incompleta,1239,2617
+2023Q4,La Araucanía,Hombres,Básica completa,1254,2667
+2023Q4,La Araucanía,Hombres,Media incompleta,4659,6214
+2023Q4,La Araucanía,Hombres,Media completa,4160,10102
+2023Q4,La Araucanía,Hombres,Superior incompleta,2292,3300
+2023Q4,La Araucanía,Hombres,Superior completa,2117,3145
+2023Q4,La Araucanía,Mujeres,Sin educación,1996,2920
+2023Q4,La Araucanía,Mujeres,Básica incompleta,3803,8757
+2023Q4,La Araucanía,Mujeres,Básica completa,2310,3661
+2023Q4,La Araucanía,Mujeres,Media incompleta,1683,4458
+2023Q4,La Araucanía,Mujeres,Media completa,4823,8333
+2023Q4,La Araucanía,Mujeres,Superior incompleta,8462,12393
+2023Q4,La Araucanía,Mujeres,Superior completa,1943,2545
+2024Q1,La Araucanía,Hombres,Sin educación,2535,3407
+2024Q1,La Araucanía,Hombres,Básica incompleta,5221,10693
+2024Q1,La Araucanía,Hombres,Básica completa,1420,1827
+2024Q1,La Araucanía,Hombres,Media incompleta,1294,1555
+2024Q1,La Araucanía,Hombres,Media completa,5422,7795
+2024Q1,La Araucanía,Hombres,Superior incompleta,3815,5425
+2024Q1,La Araucanía,Hombres,Superior completa,7222,8517
+2024Q1,La Araucanía,Mujeres,Sin educación,2850,4521
+2024Q1,La Araucanía,Mujeres,Básica incompleta,7296,12291
+2024Q1,La Araucanía,Mujeres,Básica completa,3720,4415
+2024Q1,La Araucanía,Mujeres,Media incompleta,6229,10757
+2024Q1,La Araucanía,Mujeres,Media completa,2902,5864
+2024Q1,La Araucanía,Mujeres,Superior incompleta,2755,6168
+2024Q1,La Araucanía,Mujeres,Superior completa,3131,5344
+2024Q2,La Araucanía,Hombres,Sin educación,1892,3280
+2024Q2,La Araucanía,Hombres,Básica incompleta,1083,1811
+2024Q2,La Araucanía,Hombres,Básica completa,9246,13942
+2024Q2,La Araucanía,Hombres,Media incompleta,9582,12930
+2024Q2,La Araucanía,Hombres,Media completa,5083,9636
+2024Q2,La Araucanía,Hombres,Superior incompleta,1157,1279
+2024Q2,La Araucanía,Hombres,Superior completa,1830,3771
+2024Q2,La Araucanía,Mujeres,Sin educación,8386,11445
+2024Q2,La Araucanía,Mujeres,Básica incompleta,8451,11865
+2024Q2,La Araucanía,Mujeres,Básica completa,2940,4315
+2024Q2,La Araucanía,Mujeres,Media incompleta,6712,6291
+2024Q2,La Araucanía,Mujeres,Media completa,583,1492
+2024Q2,La Araucanía,Mujeres,Superior incompleta,1081,1831
+2024Q2,La Araucanía,Mujeres,Superior completa,1045,1476
+2024Q3,La Araucanía,Hombres,Sin educación,6858,8317
+2024Q3,La Araucanía,Hombres,Básica incompleta,6047,8941
+2024Q3,La Araucanía,Hombres,Básica completa,5050,8248
+2024Q3,La Araucanía,Hombres,Media incompleta,3550,5330
+2024Q3,La Araucanía,Hombres,Media completa,5275,5841
+2024Q3,La Araucanía,Hombres,Superior incompleta,4138,6856
+2024Q3,La Araucanía,Hombres,Superior completa,4672,4417
+2024Q3,La Araucanía,Mujeres,Sin educación,4595,8431
+2024Q3,La Araucanía,Mujeres,Básica incompleta,6720,8139
+2024Q3,La Araucanía,Mujeres,Básica completa,1387,2277
+2024Q3,La Araucanía,Mujeres,Media incompleta,5196,12141
+2024Q3,La Araucanía,Mujeres,Media completa,5255,7242
+2024Q3,La Araucanía,Mujeres,Superior incompleta,2288,3658
+2024Q3,La Araucanía,Mujeres,Superior completa,2139,4258
+2024Q4,La Araucanía,Hombres,Sin educación,3153,4743
+2024Q4,La Araucanía,Hombres,Básica incompleta,2535,2998
+2024Q4,La Araucanía,Hombres,Básica completa,3011,5512
+2024Q4,La Araucanía,Hombres,Media incompleta,1871,4202
+2024Q4,La Araucanía,Hombres,Media completa,5544,10727
+2024Q4,La Araucanía,Hombres,Superior incompleta,559,1507
+2024Q4,La Araucanía,Hombres,Superior completa,4834,4842
+2024Q4,La Araucanía,Mujeres,Sin educación,5583,7759
+2024Q4,La Araucanía,Mujeres,Básica incompleta,4045,5954
+2024Q4,La Araucanía,Mujeres,Básica completa,1282,1279
+2024Q4,La Araucanía,Mujeres,Media incompleta,4425,8036
+2024Q4,La Araucanía,Mujeres,Media completa,4171,9661
+2024Q4,La Araucanía,Mujeres,Superior incompleta,1776,4007
+2024Q4,La Araucanía,Mujeres,Superior completa,2015,2957
+2023Q1,Los Ríos,Hombres,Sin educación,2804,7406
+2023Q1,Los Ríos,Hombres,Básica incompleta,1450,3205
+2023Q1,Los Ríos,Hombres,Básica completa,7113,7644
+2023Q1,Los Ríos,Hombres,Media incompleta,4162,4916
+2023Q1,Los Ríos,Hombres,Media completa,6060,7926
+2023Q1,Los Ríos,Hombres,Superior incompleta,4379,10808
+2023Q1,Los Ríos,Hombres,Superior completa,3877,8035
+2023Q1,Los Ríos,Mujeres,Sin educación,2185,3240
+2023Q1,Los Ríos,Mujeres,Básica incompleta,3647,7012
+2023Q1,Los Ríos,Mujeres,Básica completa,4533,5180
+2023Q1,Los Ríos,Mujeres,Media incompleta,9583,12222
+2023Q1,Los Ríos,Mujeres,Media completa,7539,10266
+2023Q1,Los Ríos,Mujeres,Superior incompleta,1581,2160
+2023Q1,Los Ríos,Mujeres,Superior completa,6483,6169
+2023Q2,Los Ríos,Hombres,Sin educación,4837,5127
+2023Q2,Los Ríos,Hombres,Básica incompleta,2555,3335
+2023Q2,Los Ríos,Hombres,Básica completa,4139,7983
+2023Q2,Los Ríos,Hombres,Media incompleta,8649,12658
+2023Q2,Los Ríos,Hombres,Media completa,2564,2930
+2023Q2,Los Ríos,Hombres,Superior incompleta,6538,9926
+2023Q2,Los Ríos,Hombres,Superior completa,1501,2099
+2023Q2,Los Ríos,Mujeres,Sin educación,4359,5489
+2023Q2,Los Ríos,Mujeres,Básica incompleta,3271,4997
+2023Q2,Los Ríos,Mujeres,Básica completa,4636,5042
+2023Q2,Los Ríos,Mujeres,Media incompleta,4195,9325
+2023Q2,Los Ríos,Mujeres,Media completa,6309,10773
+2023Q2,Los Ríos,Mujeres,Superior incompleta,6500,7311
+2023Q2,Los Ríos,Mujeres,Superior completa,2677,6801
+2023Q3,Los Ríos,Hombres,Sin educación,1561,2190
+2023Q3,Los Ríos,Hombres,Básica incompleta,3369,4728
+2023Q3,Los Ríos,Hombres,Básica completa,650,1134
+2023Q3,Los Ríos,Hombres,Media incompleta,1884,2644
+2023Q3,Los Ríos,Hombres,Media completa,8968,11523
+2023Q3,Los Ríos,Hombres,Superior incompleta,1304,1556
+2023Q3,Los Ríos,Hombres,Superior completa,1221,1295
+2023Q3,Los Ríos,Mujeres,Sin educación,8091,10284
+2023Q3,Los Ríos,Mujeres,Básica incompleta,5722,10979
+2023Q3,Los Ríos,Mujeres,Básica completa,7579,9793
+2023Q3,Los Ríos,Mujeres,Media incompleta,4129,8003
+2023Q3,Los Ríos,Mujeres,Media completa,3899,3895
+2023Q3,Los Ríos,Mujeres,Superior incompleta,6735,8651
+2023Q3,Los Ríos,Mujeres,Superior completa,1245,2706
+2023Q4,Los Ríos,Hombres,Sin educación,2451,2994
+2023Q4,Los Ríos,Hombres,Básica incompleta,2762,3927
+2023Q4,Los Ríos,Hombres,Básica completa,6667,8406
+2023Q4,Los Ríos,Hombres,Media incompleta,4635,12420
+2023Q4,Los Ríos,Hombres,Media completa,4942,14368
+2023Q4,Los Ríos,Hombres,Superior incompleta,3459,8195
+2023Q4,Los Ríos,Hombres,Superior completa,3907,6761
+2023Q4,Los Ríos,Mujeres,Sin educación,3847,5638
+2023Q4,Los Ríos,Mujeres,Básica incompleta,6919,9542
+2023Q4,Los Ríos,Mujeres,Básica completa,3849,5655
+2023Q4,Los Ríos,Mujeres,Media incompleta,3838,5207
+2023Q4,Los Ríos,Mujeres,Media completa,8240,9537
+2023Q4,Los Ríos,Mujeres,Superior incompleta,6512,11926
+2023Q4,Los Ríos,Mujeres,Superior completa,8083,7669
+2024Q1,Los Ríos,Hombres,Sin educación,1522,3676
+2024Q1,Los Ríos,Hombres,Básica incompleta,4142,9423
+2024Q1,Los Ríos,Hombres,Básica completa,3860,4525
+2024Q1,Los Ríos,Hombres,Media incompleta,5062,6995
+2024Q1,Los Ríos,Hombres,Media completa,6226,6252
+2024Q1,Los Ríos,Hombres,Superior incompleta,4242,6471
+2024Q1,Los Ríos,Hombres,Superior completa,1431,2271
+2024Q1,Los Ríos,Mujeres,Sin educación,3697,5319
+2024Q1,Los Ríos,Mujeres,Básica incompleta,5049,6567
+2024Q1,Los Ríos,Mujeres,Básica completa,6180,6303
+2024Q1,Los Ríos,Mujeres,Media incompleta,3683,4457
+2024Q1,Los Ríos,Mujeres,Media completa,4418,5558
+2024Q1,Los Ríos,Mujeres,Superior incompleta,9851,13857
+2024Q1,Los Ríos,Mujeres,Superior completa,3151,6481
+2024Q2,Los Ríos,Hombres,Sin educación,6240,7654
+2024Q2,Los Ríos,Hombres,Básica incompleta,3822,6424
+2024Q2,Los Ríos,Hombres,Básica completa,2976,6098
+2024Q2,Los Ríos,Hombres,Media incompleta,2858,5043
+2024Q2,Los Ríos,Hombres,Media completa,4757,4257
+2024Q2,Los Ríos,Hombres,Superior incompleta,1726,2038
+2024Q2,Los Ríos,Hombres,Superior completa,6324,7517
+2024Q2,Los Ríos,Mujeres,Sin educación,1338,2388
+2024Q2,Los Ríos,Mujeres,Básica incompleta,3257,2983
+2024Q2,Los Ríos,Mujeres,Básica completa,2111,4365
+2024Q2,Los Ríos,Mujeres,Media incompleta,6312,9654
+2024Q2,Los Ríos,Mujeres,Media completa,5614,6310
+2024Q2,Los Ríos,Mujeres,Superior incompleta,5219,9965
+2024Q2,Los Ríos,Mujeres,Superior completa,6934,9117
+2024Q3,Los Ríos,Hombres,Sin educación,7362,7175
+2024Q3,Los Ríos,Hombres,Básica incompleta,4984,12459
+2024Q3,Los Ríos,Hombres,Básica completa,5991,9881
+2024Q3,Los Ríos,Hombres,Media incompleta,4994,8683
+2024Q3,Los Ríos,Hombres,Media completa,6396,7660
+2024Q3,Los Ríos,Hombres,Superior incompleta,4796,4510
+2024Q3,Los Ríos,Hombres,Superior completa,4036,6953
+2024Q3,Los Ríos,Mujeres,Sin educación,1112,2008
+2024Q3,Los Ríos,Mujeres,Básica incompleta,5127,5485
+2024Q3,Los Ríos,Mujeres,Básica completa,5299,6947
+2024Q3,Los Ríos,Mujeres,Media incompleta,3620,6135
+2024Q3,Los Ríos,Mujeres,Media completa,1022,1604
+2024Q3,Los Ríos,Mujeres,Superior incompleta,3077,6079
+2024Q3,Los Ríos,Mujeres,Superior completa,4582,7709
+2024Q4,Los Ríos,Hombres,Sin educación,6741,12026
+2024Q4,Los Ríos,Hombres,Básica incompleta,1220,2501
+2024Q4,Los Ríos,Hombres,Básica completa,6557,10631
+2024Q4,Los Ríos,Hombres,Media incompleta,10571,13421
+2024Q4,Los Ríos,Hombres,Media completa,4869,11882
+2024Q4,Los Ríos,Hombres,Superior incompleta,6150,9505
+2024Q4,Los Ríos,Hombres,Superior completa,4430,4768
+2024Q4,Los Ríos,Mujeres,Sin educación,3698,4970
+2024Q4,Los Ríos,Mujeres,Básica incompleta,7376,9964
+2024Q4,Los Ríos,Mujeres,Básica completa,3854,6502
+2024Q4,Los Ríos,Mujeres,Media incompleta,4265,9190
+2024Q4,Los Ríos,Mujeres,Media completa,3493,3579
+2024Q4,Los Ríos,Mujeres,Superior incompleta,6499,8707
+2024Q4,Los Ríos,Mujeres,Superior completa,2431,3181
+2023Q1,Los Lagos,Hombres,Sin educación,690,1372
+2023Q1,Los Lagos,Hombres,Básica incompleta,901,1566
+2023Q1,Los Lagos,Hombres,Básica completa,3918,3440
+2023Q1,Los Lagos,Hombres,Media incompleta,6039,10145
+2023Q1,Los Lagos,Hombres,Media completa,1637,1850
+2023Q1,Los Lagos,Hombres,Superior incompleta,4947,5135
+2023Q1,Los Lagos,Hombres,Superior completa,4925,8176
+2023Q1,Los Lagos,Mujeres,Sin educación,1522,1615
+2023Q1,Los Lagos,Mujeres,Básica incompleta,1224,2033
+2023Q1,Los Lagos,Mujeres,Básica completa,4480,10945
+2023Q1,Los Lagos,Mujeres,Media incompleta,6856,11410
+2023Q1,Los Lagos,Mujeres,Media completa,2176,2527
+2023Q1,Los Lagos,Mujeres,Superior incompleta,1467,2700
+2023Q1,Los Lagos,Mujeres,Superior completa,2899,6583
+2023Q2,Los Lagos,Hombres,Sin educación,1555,3918
+2023Q2,Los Lagos,Hombres,Básica incompleta,6618,8177
+2023Q2,Los Lagos,Hombres,Básica completa,8049,11112
+2023Q2,Los Lagos,Hombres,Media incompleta,4816,11207
+2023Q2,Los Lagos,Hombres,Media completa,8286,8961
+2023Q2,Los Lagos,Hombres,Superior incompleta,5537,7652
+2023Q2,Los Lagos,Hombres,Superior completa,4314,5536
+2023Q2,Los Lagos,Mujeres,Sin educación,831,1043
+2023Q2,Los Lagos,Mujeres,Básica incompleta,3895,6730
+2023Q2,Los Lagos,Mujeres,Básica completa,7626,7622
+2023Q2,Los Lagos,Mujeres,Media incompleta,5089,6118
+2023Q2,Los Lagos,Mujeres,Media completa,6200,8960
+2023Q2,Los Lagos,Mujeres,Superior incompleta,4661,7476
+2023Q2,Los Lagos,Mujeres,Superior completa,1046,1413
+2023Q3,Los Lagos,Hombres,Sin educación,1420,2428
+2023Q3,Los Lagos,Hombres,Básica incompleta,8244,7784
+2023Q3,Los Lagos,Hombres,Básica completa,6817,6497
+2023Q3,Los Lagos,Hombres,Media incompleta,6975,9212
+2023Q3,Los Lagos,Hombres,Media completa,6089,6994
+2023Q3,Los Lagos,Hombres,Superior incompleta,6263,6768
+2023Q3,Los Lagos,Hombres,Superior completa,2494,4551
+2023Q3,Los Lagos,Mujeres,Sin educación,6904,8530
+2023Q3,Los Lagos,Mujeres,Básica incompleta,4023,7144
+2023Q3,Los Lagos,Mujeres,Básica completa,6164,7478
+2023Q3,Los Lagos,Mujeres,Media incompleta,6462,8251
+2023Q3,Los Lagos,Mujeres,Media completa,4209,4626
+2023Q3,Los Lagos,Mujeres,Superior incompleta,7541,7850
+2023Q3,Los Lagos,Mujeres,Superior completa,1193,2461
+2023Q4,Los Lagos,Hombres,Sin educación,3599,4269
+2023Q4,Los Lagos,Hombres,Básica incompleta,3751,3791
+2023Q4,Los Lagos,Hombres,Básica completa,1655,2169
+2023Q4,Los Lagos,Hombres,Media incompleta,3462,6404
+2023Q4,Los Lagos,Hombres,Media completa,3184,6861
+2023Q4,Los Lagos,Hombres,Superior incompleta,1231,2407
+2023Q4,Los Lagos,Hombres,Superior completa,4772,7777
+2023Q4,Los Lagos,Mujeres,Sin educación,6310,9723
+2023Q4,Los Lagos,Mujeres,Básica incompleta,4545,7528
+2023Q4,Los Lagos,Mujeres,Básica completa,2367,6523
+2023Q4,Los Lagos,Mujeres,Media incompleta,3227,3198
+2023Q4,Los Lagos,Mujeres,Media completa,1446,1804
+2023Q4,Los Lagos,Mujeres,Superior incompleta,1387,1688
+2023Q4,Los Lagos,Mujeres,Superior completa,6966,11352
+2024Q1,Los Lagos,Hombres,Sin educación,2318,4139
+2024Q1,Los Lagos,Hombres,Básica incompleta,9144,11918
+2024Q1,Los Lagos,Hombres,Básica completa,5953,5766
+2024Q1,Los Lagos,Hombres,Media incompleta,4429,7128
+2024Q1,Los Lagos,Hombres,Media completa,7468,9986
+2024Q1,Los Lagos,Hombres,Superior incompleta,5215,6068
+2024Q1,Los Lagos,Hombres,Superior completa,6385,12441
+2024Q1,Los Lagos,Mujeres,Sin educación,3117,8211
+2024Q1,Los Lagos,Mujeres,Básica incompleta,4861,7608
+2024Q1,Los Lagos,Mujeres,Básica completa,5428,6047
+2024Q1,Los Lagos,Mujeres,Media incompleta,2593,4185
+2024Q1,Los Lagos,Mujeres,Media completa,7427,8447
+2024Q1,Los Lagos,Mujeres,Superior incompleta,3982,6118
+2024Q1,Los Lagos,Mujeres,Superior completa,3220,8232
+2024Q2,Los Lagos,Hombres,Sin educación,985,1106
+2024Q2,Los Lagos,Hombres,Básica incompleta,4558,6964
+2024Q2,Los Lagos,Hombres,Básica completa,2063,3423
+2024Q2,Los Lagos,Hombres,Media incompleta,4717,6280
+2024Q2,Los Lagos,Hombres,Media completa,5379,10093
+2024Q2,Los Lagos,Hombres,Superior incompleta,7663,8082
+2024Q2,Los Lagos,Hombres,Superior completa,4410,8324
+2024Q2,Los Lagos,Mujeres,Sin educación,7036,9122
+2024Q2,Los Lagos,Mujeres,Básica incompleta,8994,9738
+2024Q2,Los Lagos,Mujeres,Básica completa,5488,8194
+2024Q2,Los Lagos,Mujeres,Media incompleta,1072,2249
+2024Q2,Los Lagos,Mujeres,Media completa,2462,2709
+2024Q2,Los Lagos,Mujeres,Superior incompleta,5898,7856
+2024Q2,Los Lagos,Mujeres,Superior completa,3050,3798
+2024Q3,Los Lagos,Hombres,Sin educación,3723,3641
+2024Q3,Los Lagos,Hombres,Básica incompleta,1757,3978
+2024Q3,Los Lagos,Hombres,Básica completa,2170,3143
+2024Q3,Los Lagos,Hombres,Media incompleta,3382,6161
+2024Q3,Los Lagos,Hombres,Media completa,3543,4166
+2024Q3,Los Lagos,Hombres,Superior incompleta,6899,6852
+2024Q3,Los Lagos,Hombres,Superior completa,5187,8855
+2024Q3,Los Lagos,Mujeres,Sin educación,3187,6348
+2024Q3,Los Lagos,Mujeres,Básica incompleta,3983,5499
+2024Q3,Los Lagos,Mujeres,Básica completa,3237,4345
+2024Q3,Los Lagos,Mujeres,Media incompleta,3900,5181
+2024Q3,Los Lagos,Mujeres,Media completa,7539,10038
+2024Q3,Los Lagos,Mujeres,Superior incompleta,4999,5266
+2024Q3,Los Lagos,Mujeres,Superior completa,879,1985
+2024Q4,Los Lagos,Hombres,Sin educación,4850,6216
+2024Q4,Los Lagos,Hombres,Básica incompleta,7056,9493
+2024Q4,Los Lagos,Hombres,Básica completa,6769,10173
+2024Q4,Los Lagos,Hombres,Media incompleta,7057,10073
+2024Q4,Los Lagos,Hombres,Media completa,1028,2731
+2024Q4,Los Lagos,Hombres,Superior incompleta,5262,9442
+2024Q4,Los Lagos,Hombres,Superior completa,6913,7003
+2024Q4,Los Lagos,Mujeres,Sin educación,1689,3042
+2024Q4,Los Lagos,Mujeres,Básica incompleta,7206,6828
+2024Q4,Los Lagos,Mujeres,Básica completa,5865,6794
+2024Q4,Los Lagos,Mujeres,Media incompleta,3954,8624
+2024Q4,Los Lagos,Mujeres,Media completa,5088,4602
+2024Q4,Los Lagos,Mujeres,Superior incompleta,2522,3596
+2024Q4,Los Lagos,Mujeres,Superior completa,7972,7761
+2023Q1,Aysén,Hombres,Sin educación,10115,13344
+2023Q1,Aysén,Hombres,Básica incompleta,2229,6037
+2023Q1,Aysén,Hombres,Básica completa,2733,6534
+2023Q1,Aysén,Hombres,Media incompleta,4848,5218
+2023Q1,Aysén,Hombres,Media completa,5930,11820
+2023Q1,Aysén,Hombres,Superior incompleta,8552,9227
+2023Q1,Aysén,Hombres,Superior completa,4379,6789
+2023Q1,Aysén,Mujeres,Sin educación,9256,12812
+2023Q1,Aysén,Mujeres,Básica incompleta,5990,13102
+2023Q1,Aysén,Mujeres,Básica completa,2203,4041
+2023Q1,Aysén,Mujeres,Media incompleta,4943,9225
+2023Q1,Aysén,Mujeres,Media completa,8686,13763
+2023Q1,Aysén,Mujeres,Superior incompleta,1302,1873
+2023Q1,Aysén,Mujeres,Superior completa,6649,8938
+2023Q2,Aysén,Hombres,Sin educación,6217,10200
+2023Q2,Aysén,Hombres,Básica incompleta,7509,8847
+2023Q2,Aysén,Hombres,Básica completa,2223,3903
+2023Q2,Aysén,Hombres,Media incompleta,4537,5696
+2023Q2,Aysén,Hombres,Media completa,1749,1935
+2023Q2,Aysén,Hombres,Superior incompleta,5982,6099
+2023Q2,Aysén,Hombres,Superior completa,1395,1450
+2023Q2,Aysén,Mujeres,Sin educación,7211,11561
+2023Q2,Aysén,Mujeres,Básica incompleta,2691,3524
+2023Q2,Aysén,Mujeres,Básica completa,2979,4904
+2023Q2,Aysén,Mujeres,Media incompleta,6427,11689
+2023Q2,Aysén,Mujeres,Media completa,3721,10142
+2023Q2,Aysén,Mujeres,Superior incompleta,8699,11830
+2023Q2,Aysén,Mujeres,Superior completa,4521,8628
+2023Q3,Aysén,Hombres,Sin educación,6152,6478
+2023Q3,Aysén,Hombres,Básica incompleta,996,1311
+2023Q3,Aysén,Hombres,Básica completa,8064,12026
+2023Q3,Aysén,Hombres,Media incompleta,4032,4074
+2023Q3,Aysén,Hombres,Media completa,850,1197
+2023Q3,Aysén,Hombres,Superior incompleta,2918,4788
+2023Q3,Aysén,Hombres,Superior completa,6399,8270
+2023Q3,Aysén,Mujeres,Sin educación,7229,10454
+2023Q3,Aysén,Mujeres,Básica incompleta,1033,1587
+2023Q3,Aysén,Mujeres,Básica completa,5092,8844
+2023Q3,Aysén,Mujeres,Media incompleta,3769,10022
+2023Q3,Aysén,Mujeres,Media completa,3251,6112
+2023Q3,Aysén,Mujeres,Superior incompleta,9179,11702
+2023Q3,Aysén,Mujeres,Superior completa,6850,9380
+2023Q4,Aysén,Hombres,Sin educación,2819,3038
+2023Q4,Aysén,Hombres,Básica incompleta,5667,5818
+2023Q4,Aysén,Hombres,Básica completa,1429,1554
+2023Q4,Aysén,Hombres,Media incompleta,5685,12416
+2023Q4,Aysén,Hombres,Media completa,3782,7790
+2023Q4,Aysén,Hombres,Superior incompleta,2171,3457
+2023Q4,Aysén,Hombres,Superior completa,5943,8486
+2023Q4,Aysén,Mujeres,Sin educación,4045,5320
+2023Q4,Aysén,Mujeres,Básica incompleta,8408,10757
+2023Q4,Aysén,Mujeres,Básica completa,8889,14638
+2023Q4,Aysén,Mujeres,Media incompleta,4648,5932
+2023Q4,Aysén,Mujeres,Media completa,1073,2331
+2023Q4,Aysén,Mujeres,Superior incompleta,6567,6388
+2023Q4,Aysén,Mujeres,Superior completa,3688,3588
+2024Q1,Aysén,Hombres,Sin educación,3517,4074
+2024Q1,Aysén,Hombres,Básica incompleta,8029,12378
+2024Q1,Aysén,Hombres,Básica completa,1635,3349
+2024Q1,Aysén,Hombres,Media incompleta,4115,5101
+2024Q1,Aysén,Hombres,Media completa,3330,5176
+2024Q1,Aysén,Hombres,Superior incompleta,5677,8101
+2024Q1,Aysén,Hombres,Superior completa,1054,2630
+2024Q1,Aysén,Mujeres,Sin educación,7034,9654
+2024Q1,Aysén,Mujeres,Básica incompleta,4612,11119
+2024Q1,Aysén,Mujeres,Básica completa,3452,4711
+2024Q1,Aysén,Mujeres,Media incompleta,2173,3922
+2024Q1,Aysén,Mujeres,Media completa,1214,1913
+2024Q1,Aysén,Mujeres,Superior incompleta,3278,5826
+2024Q1,Aysén,Mujeres,Superior completa,1835,4424
+2024Q2,Aysén,Hombres,Sin educación,1521,2045
+2024Q2,Aysén,Hombres,Básica incompleta,7303,12180
+2024Q2,Aysén,Hombres,Básica completa,3557,6178
+2024Q2,Aysén,Hombres,Media incompleta,2097,3743
+2024Q2,Aysén,Hombres,Media completa,4434,11298
+2024Q2,Aysén,Hombres,Superior incompleta,5692,9053
+2024Q2,Aysén,Hombres,Superior completa,2510,2858
+2024Q2,Aysén,Mujeres,Sin educación,6035,10424
+2024Q2,Aysén,Mujeres,Básica incompleta,4060,6250
+2024Q2,Aysén,Mujeres,Básica completa,2525,2805
+2024Q2,Aysén,Mujeres,Media incompleta,2170,4721
+2024Q2,Aysén,Mujeres,Media completa,2526,2972
+2024Q2,Aysén,Mujeres,Superior incompleta,4669,6328
+2024Q2,Aysén,Mujeres,Superior completa,4902,7376
+2024Q3,Aysén,Hombres,Sin educación,7613,12628
+2024Q3,Aysén,Hombres,Básica incompleta,3956,7660
+2024Q3,Aysén,Hombres,Básica completa,5433,11420
+2024Q3,Aysén,Hombres,Media incompleta,766,1565
+2024Q3,Aysén,Hombres,Media completa,3651,5260
+2024Q3,Aysén,Hombres,Superior incompleta,4370,9417
+2024Q3,Aysén,Hombres,Superior completa,4312,7342
+2024Q3,Aysén,Mujeres,Sin educación,6806,11279
+2024Q3,Aysén,Mujeres,Básica incompleta,6425,7627
+2024Q3,Aysén,Mujeres,Básica completa,646,1715
+2024Q3,Aysén,Mujeres,Media incompleta,5584,8266
+2024Q3,Aysén,Mujeres,Media completa,5381,6153
+2024Q3,Aysén,Mujeres,Superior incompleta,1370,1929
+2024Q3,Aysén,Mujeres,Superior completa,1969,3679
+2024Q4,Aysén,Hombres,Sin educación,5974,7370
+2024Q4,Aysén,Hombres,Básica incompleta,5958,11646
+2024Q4,Aysén,Hombres,Básica completa,4569,5116
+2024Q4,Aysén,Hombres,Media incompleta,10345,10776
+2024Q4,Aysén,Hombres,Media completa,4395,5330
+2024Q4,Aysén,Hombres,Superior incompleta,2513,4209
+2024Q4,Aysén,Hombres,Superior completa,4265,10989
+2024Q4,Aysén,Mujeres,Sin educación,6329,12240
+2024Q4,Aysén,Mujeres,Básica incompleta,6112,10815
+2024Q4,Aysén,Mujeres,Básica completa,3376,4961
+2024Q4,Aysén,Mujeres,Media incompleta,4999,8933
+2024Q4,Aysén,Mujeres,Media completa,6470,5976
+2024Q4,Aysén,Mujeres,Superior incompleta,8545,12395
+2024Q4,Aysén,Mujeres,Superior completa,7671,8103
+2023Q1,Magallanes,Hombres,Sin educación,2891,3924
+2023Q1,Magallanes,Hombres,Básica incompleta,5948,8896
+2023Q1,Magallanes,Hombres,Básica completa,5275,8759
+2023Q1,Magallanes,Hombres,Media incompleta,1819,3360
+2023Q1,Magallanes,Hombres,Media completa,6648,10624
+2023Q1,Magallanes,Hombres,Superior incompleta,5434,12857
+2023Q1,Magallanes,Hombres,Superior completa,4023,7896
+2023Q1,Magallanes,Mujeres,Sin educación,6448,8644
+2023Q1,Magallanes,Mujeres,Básica incompleta,8897,8460
+2023Q1,Magallanes,Mujeres,Básica completa,4567,6790
+2023Q1,Magallanes,Mujeres,Media incompleta,5812,12777
+2023Q1,Magallanes,Mujeres,Media completa,3624,7797
+2023Q1,Magallanes,Mujeres,Superior incompleta,2185,4805
+2023Q1,Magallanes,Mujeres,Superior completa,5850,7047
+2023Q2,Magallanes,Hombres,Sin educación,6013,10360
+2023Q2,Magallanes,Hombres,Básica incompleta,5147,4911
+2023Q2,Magallanes,Hombres,Básica completa,4265,5413
+2023Q2,Magallanes,Hombres,Media incompleta,5421,13645
+2023Q2,Magallanes,Hombres,Media completa,1337,1768
+2023Q2,Magallanes,Hombres,Superior incompleta,6673,8496
+2023Q2,Magallanes,Hombres,Superior completa,6598,9309
+2023Q2,Magallanes,Mujeres,Sin educación,9155,9309
+2023Q2,Magallanes,Mujeres,Básica incompleta,8903,11201
+2023Q2,Magallanes,Mujeres,Básica completa,2365,4509
+2023Q2,Magallanes,Mujeres,Media incompleta,4995,9842
+2023Q2,Magallanes,Mujeres,Media completa,3365,4024
+2023Q2,Magallanes,Mujeres,Superior incompleta,4661,5405
+2023Q2,Magallanes,Mujeres,Superior completa,4257,5874
+2023Q3,Magallanes,Hombres,Sin educación,2085,2654
+2023Q3,Magallanes,Hombres,Básica incompleta,5095,8971
+2023Q3,Magallanes,Hombres,Básica completa,2291,3833
+2023Q3,Magallanes,Hombres,Media incompleta,7432,9789
+2023Q3,Magallanes,Hombres,Media completa,2164,3192
+2023Q3,Magallanes,Hombres,Superior incompleta,3674,5639
+2023Q3,Magallanes,Hombres,Superior completa,2518,2938
+2023Q3,Magallanes,Mujeres,Sin educación,7878,11480
+2023Q3,Magallanes,Mujeres,Básica incompleta,4560,3938
+2023Q3,Magallanes,Mujeres,Básica completa,1963,2830
+2023Q3,Magallanes,Mujeres,Media incompleta,1572,2454
+2023Q3,Magallanes,Mujeres,Media completa,2302,3030
+2023Q3,Magallanes,Mujeres,Superior incompleta,3216,4512
+2023Q3,Magallanes,Mujeres,Superior completa,1759,2413
+2023Q4,Magallanes,Hombres,Sin educación,1321,3244
+2023Q4,Magallanes,Hombres,Básica incompleta,9250,8524
+2023Q4,Magallanes,Hombres,Básica completa,4440,11508
+2023Q4,Magallanes,Hombres,Media incompleta,1149,1837
+2023Q4,Magallanes,Hombres,Media completa,4456,9540
+2023Q4,Magallanes,Hombres,Superior incompleta,10492,8877
+2023Q4,Magallanes,Hombres,Superior completa,4603,8198
+2023Q4,Magallanes,Mujeres,Sin educación,1606,2484
+2023Q4,Magallanes,Mujeres,Básica incompleta,4809,5456
+2023Q4,Magallanes,Mujeres,Básica completa,3302,2958
+2023Q4,Magallanes,Mujeres,Media incompleta,1680,2660
+2023Q4,Magallanes,Mujeres,Media completa,3605,7970
+2023Q4,Magallanes,Mujeres,Superior incompleta,6877,8752
+2023Q4,Magallanes,Mujeres,Superior completa,5590,11146
+2024Q1,Magallanes,Hombres,Sin educación,2982,6701
+2024Q1,Magallanes,Hombres,Básica incompleta,5154,8517
+2024Q1,Magallanes,Hombres,Básica completa,7638,7008
+2024Q1,Magallanes,Hombres,Media incompleta,8657,10811
+2024Q1,Magallanes,Hombres,Media completa,8115,11173
+2024Q1,Magallanes,Hombres,Superior incompleta,8306,9238
+2024Q1,Magallanes,Hombres,Superior completa,6859,10677
+2024Q1,Magallanes,Mujeres,Sin educación,1454,3590
+2024Q1,Magallanes,Mujeres,Básica incompleta,2349,3017
+2024Q1,Magallanes,Mujeres,Básica completa,4384,6654
+2024Q1,Magallanes,Mujeres,Media incompleta,6847,10162
+2024Q1,Magallanes,Mujeres,Media completa,883,1302
+2024Q1,Magallanes,Mujeres,Superior incompleta,1634,1991
+2024Q1,Magallanes,Mujeres,Superior completa,2327,4466
+2024Q2,Magallanes,Hombres,Sin educación,1638,3160
+2024Q2,Magallanes,Hombres,Básica incompleta,8889,12192
+2024Q2,Magallanes,Hombres,Básica completa,1202,2421
+2024Q2,Magallanes,Hombres,Media incompleta,8605,7696
+2024Q2,Magallanes,Hombres,Media completa,4129,5482
+2024Q2,Magallanes,Hombres,Superior incompleta,4388,8461
+2024Q2,Magallanes,Hombres,Superior completa,4310,4189
+2024Q2,Magallanes,Mujeres,Sin educación,2598,2451
+2024Q2,Magallanes,Mujeres,Básica incompleta,906,1551
+2024Q2,Magallanes,Mujeres,Básica completa,4106,5586
+2024Q2,Magallanes,Mujeres,Media incompleta,10089,9893
+2024Q2,Magallanes,Mujeres,Media completa,1891,4136
+2024Q2,Magallanes,Mujeres,Superior incompleta,1094,1285
+2024Q2,Magallanes,Mujeres,Superior completa,4898,5811
+2024Q3,Magallanes,Hombres,Sin educación,2174,3351
+2024Q3,Magallanes,Hombres,Básica incompleta,1265,2010
+2024Q3,Magallanes,Hombres,Básica completa,4364,5915
+2024Q3,Magallanes,Hombres,Media incompleta,8078,8139
+2024Q3,Magallanes,Hombres,Media completa,5012,10063
+2024Q3,Magallanes,Hombres,Superior incompleta,3196,2941
+2024Q3,Magallanes,Hombres,Superior completa,7369,7856
+2024Q3,Magallanes,Mujeres,Sin educación,4395,3783
+2024Q3,Magallanes,Mujeres,Básica incompleta,4130,4705
+2024Q3,Magallanes,Mujeres,Básica completa,1372,1994
+2024Q3,Magallanes,Mujeres,Media incompleta,3005,4251
+2024Q3,Magallanes,Mujeres,Media completa,5528,8665
+2024Q3,Magallanes,Mujeres,Superior incompleta,547,1072
+2024Q3,Magallanes,Mujeres,Superior completa,1927,2979
+2024Q4,Magallanes,Hombres,Sin educación,3708,9005
+2024Q4,Magallanes,Hombres,Básica incompleta,6759,7794
+2024Q4,Magallanes,Hombres,Básica completa,6718,10886
+2024Q4,Magallanes,Hombres,Media incompleta,5931,14082
+2024Q4,Magallanes,Hombres,Media completa,4346,8938
+2024Q4,Magallanes,Hombres,Superior incompleta,1123,1079
+2024Q4,Magallanes,Hombres,Superior completa,1510,1589
+2024Q4,Magallanes,Mujeres,Sin educación,4417,10720
+2024Q4,Magallanes,Mujeres,Básica incompleta,5763,8755
+2024Q4,Magallanes,Mujeres,Básica completa,4800,8078
+2024Q4,Magallanes,Mujeres,Media incompleta,1696,3161
+2024Q4,Magallanes,Mujeres,Media completa,5959,8511
+2024Q4,Magallanes,Mujeres,Superior incompleta,1784,2351
+2024Q4,Magallanes,Mujeres,Superior completa,1961,3668
+2023Q1,Metropolitana,Hombres,Sin educación,9021,9039
+2023Q1,Metropolitana,Hombres,Básica incompleta,2175,2250
+2023Q1,Metropolitana,Hombres,Básica completa,7739,9437
+2023Q1,Metropolitana,Hombres,Media incompleta,1999,4012
+2023Q1,Metropolitana,Hombres,Media completa,1480,2603
+2023Q1,Metropolitana,Hombres,Superior incompleta,1536,2058
+2023Q1,Metropolitana,Hombres,Superior completa,10295,12634
+2023Q1,Metropolitana,Mujeres,Sin educación,1385,2228
+2023Q1,Metropolitana,Mujeres,Básica incompleta,5782,9696
+2023Q1,Metropolitana,Mujeres,Básica completa,5642,8146
+2023Q1,Metropolitana,Mujeres,Media incompleta,3153,3907
+2023Q1,Metropolitana,Mujeres,Media completa,5005,6679
+2023Q1,Metropolitana,Mujeres,Superior incompleta,3524,5354
+2023Q1,Metropolitana,Mujeres,Superior completa,2228,3081
+2023Q2,Metropolitana,Hombres,Sin educación,6560,9619
+2023Q2,Metropolitana,Hombres,Básica incompleta,2229,5574
+2023Q2,Metropolitana,Hombres,Básica completa,1243,1391
+2023Q2,Metropolitana,Hombres,Media incompleta,7731,9486
+2023Q2,Metropolitana,Hombres,Media completa,4031,6782
+2023Q2,Metropolitana,Hombres,Superior incompleta,7378,12909
+2023Q2,Metropolitana,Hombres,Superior completa,5874,7804
+2023Q2,Metropolitana,Mujeres,Sin educación,2804,4468
+2023Q2,Metropolitana,Mujeres,Básica incompleta,1556,1895
+2023Q2,Metropolitana,Mujeres,Básica completa,3941,7950
+2023Q2,Metropolitana,Mujeres,Media incompleta,2022,4136
+2023Q2,Metropolitana,Mujeres,Media completa,2925,3535
+2023Q2,Metropolitana,Mujeres,Superior incompleta,8599,8272
+2023Q2,Metropolitana,Mujeres,Superior completa,4478,7892
+2023Q3,Metropolitana,Hombres,Sin educación,1614,2901
+2023Q3,Metropolitana,Hombres,Básica incompleta,5147,9584
+2023Q3,Metropolitana,Hombres,Básica completa,7192,10309
+2023Q3,Metropolitana,Hombres,Media incompleta,1974,3695
+2023Q3,Metropolitana,Hombres,Media completa,5754,8357
+2023Q3,Metropolitana,Hombres,Superior incompleta,7697,10318
+2023Q3,Metropolitana,Hombres,Superior completa,8644,9057
+2023Q3,Metropolitana,Mujeres,Sin educación,5034,6488
+2023Q3,Metropolitana,Mujeres,Básica incompleta,4311,5865
+2023Q3,Metropolitana,Mujeres,Básica completa,3294,4035
+2023Q3,Metropolitana,Mujeres,Media incompleta,4739,8275
+2023Q3,Metropolitana,Mujeres,Media completa,5932,7827
+2023Q3,Metropolitana,Mujeres,Superior incompleta,6218,11195
+2023Q3,Metropolitana,Mujeres,Superior completa,1881,2489
+2023Q4,Metropolitana,Hombres,Sin educación,1417,2294
+2023Q4,Metropolitana,Hombres,Básica incompleta,2525,3284
+2023Q4,Metropolitana,Hombres,Básica completa,3804,4468
+2023Q4,Metropolitana,Hombres,Media incompleta,4384,6954
+2023Q4,Metropolitana,Hombres,Media completa,1652,1856
+2023Q4,Metropolitana,Hombres,Superior incompleta,5410,5129
+2023Q4,Metropolitana,Hombres,Superior completa,2456,3693
+2023Q4,Metropolitana,Mujeres,Sin educación,4485,9574
+2023Q4,Metropolitana,Mujeres,Básica incompleta,3164,5388
+2023Q4,Metropolitana,Mujeres,Básica completa,7760,10834
+2023Q4,Metropolitana,Mujeres,Media incompleta,648,1525
+2023Q4,Metropolitana,Mujeres,Media completa,3159,3438
+2023Q4,Metropolitana,Mujeres,Superior incompleta,6669,8503
+2023Q4,Metropolitana,Mujeres,Superior completa,9584,10580
+2024Q1,Metropolitana,Hombres,Sin educación,1455,2691
+2024Q1,Metropolitana,Hombres,Básica incompleta,2741,5802
+2024Q1,Metropolitana,Hombres,Básica completa,4727,9399
+2024Q1,Metropolitana,Hombres,Media incompleta,7773,10440
+2024Q1,Metropolitana,Hombres,Media completa,2727,3351
+2024Q1,Metropolitana,Hombres,Superior incompleta,2948,3803
+2024Q1,Metropolitana,Hombres,Superior completa,7833,11023
+2024Q1,Metropolitana,Mujeres,Sin educación,3522,6014
+2024Q1,Metropolitana,Mujeres,Básica incompleta,1924,3111
+2024Q1,Metropolitana,Mujeres,Básica completa,1148,1656
+2024Q1,Metropolitana,Mujeres,Media incompleta,10241,12986
+2024Q1,Metropolitana,Mujeres,Media completa,1122,1842
+2024Q1,Metropolitana,Mujeres,Superior incompleta,1300,3504
+2024Q1,Metropolitana,Mujeres,Superior completa,8697,8573
+2024Q2,Metropolitana,Hombres,Sin educación,813,1058
+2024Q2,Metropolitana,Hombres,Básica incompleta,8329,12653
+2024Q2,Metropolitana,Hombres,Básica completa,7210,7117
+2024Q2,Metropolitana,Hombres,Media incompleta,1398,2339
+2024Q2,Metropolitana,Hombres,Media completa,6045,7406
+2024Q2,Metropolitana,Hombres,Superior incompleta,2166,2391
+2024Q2,Metropolitana,Hombres,Superior completa,7814,13425
+2024Q2,Metropolitana,Mujeres,Sin educación,5817,6513
+2024Q2,Metropolitana,Mujeres,Básica incompleta,4719,8764
+2024Q2,Metropolitana,Mujeres,Básica completa,7213,8908
+2024Q2,Metropolitana,Mujeres,Media incompleta,2356,3977
+2024Q2,Metropolitana,Mujeres,Media completa,6548,8522
+2024Q2,Metropolitana,Mujeres,Superior incompleta,6505,6233
+2024Q2,Metropolitana,Mujeres,Superior completa,1502,3490
+2024Q3,Metropolitana,Hombres,Sin educación,3934,6218
+2024Q3,Metropolitana,Hombres,Básica incompleta,7767,13431
+2024Q3,Metropolitana,Hombres,Básica completa,5202,8352
+2024Q3,Metropolitana,Hombres,Media incompleta,6348,8404
+2024Q3,Metropolitana,Hombres,Media completa,1384,2814
+2024Q3,Metropolitana,Hombres,Superior incompleta,8631,10905
+2024Q3,Metropolitana,Hombres,Superior completa,2303,3040
+2024Q3,Metropolitana,Mujeres,Sin educación,5543,7445
+2024Q3,Metropolitana,Mujeres,Básica incompleta,6652,7970
+2024Q3,Metropolitana,Mujeres,Básica completa,7142,10166
+2024Q3,Metropolitana,Mujeres,Media incompleta,7388,7597
+2024Q3,Metropolitana,Mujeres,Media completa,2178,3293
+2024Q3,Metropolitana,Mujeres,Superior incompleta,3502,4774
+2024Q3,Metropolitana,Mujeres,Superior completa,4930,11302
+2024Q4,Metropolitana,Hombres,Sin educación,2362,5606
+2024Q4,Metropolitana,Hombres,Básica incompleta,1682,3032
+2024Q4,Metropolitana,Hombres,Básica completa,7222,9079
+2024Q4,Metropolitana,Hombres,Media incompleta,1742,4118
+2024Q4,Metropolitana,Hombres,Media completa,5693,6376
+2024Q4,Metropolitana,Hombres,Superior incompleta,1392,2406
+2024Q4,Metropolitana,Hombres,Superior completa,589,1533
+2024Q4,Metropolitana,Mujeres,Sin educación,4757,11501
+2024Q4,Metropolitana,Mujeres,Básica incompleta,4777,11037
+2024Q4,Metropolitana,Mujeres,Básica completa,758,1585
+2024Q4,Metropolitana,Mujeres,Media incompleta,4260,4689
+2024Q4,Metropolitana,Mujeres,Media completa,4405,7939
+2024Q4,Metropolitana,Mujeres,Superior incompleta,9918,9227
+2024Q4,Metropolitana,Mujeres,Superior completa,6363,9324
