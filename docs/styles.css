@@ -73,9 +73,6 @@ body {
     margin-top: 5px;
 }
 
-/* Economist-style underline for headers */
-.econ-underline { width: 100%; height: 3px; background: #e3120b; border-radius: 2px; margin: 8px 0 0 0; }
-
 /* Navegación */
 .nav-container {
     background: #f8f9fa;
@@ -127,46 +124,25 @@ body {
     font-size: 22px;
     font-weight: normal;
     text-align: center;
-    margin: 0 auto 10px auto;
+    margin-bottom: 50px;
     color: #2c3e50;
     border-bottom: 3px solid #1B4F72;
     padding-bottom: 10px;
-    display: block;
-    width: fit-content;
-    max-width: 90%;
-}
-
-.section-subtitle {
-    font-size: 14px;
-    color: #475569;
-    text-align: center;
-    margin: 0 auto 40px auto;
-    font-family: 'Georgia', serif;
+    display: inline-block;
+    width: 100%;
 }
 
 .chart-section {
     margin-bottom: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* Responsive chart sizing: full width, altura específica por gráfico controlada via JS */
-.chart-section > div {
+.chart-frame {
     width: 100%;
-    max-width: 1200px; /* limitar ancho máximo para mejor centrado */
-    min-height: 400px; /* altura mínima, la específica se controla via JavaScript */
-    margin: 0 auto; /* centrado adicional */
-}
-
-/* Ajustes móviles */
-@media (max-width: 640px) {
-    .container { padding: 24px 16px; }
-    .nav-container { padding: 12px; }
-    .nav-links { gap: 12px; }
-    .chart-section > div { min-height: 320px; max-width: 100%; }
-    .main-title { font-size: 22px; }
-    .subtitle { font-size: 14px; }
+    min-height: 720px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background: #f7f2ea;
 }
 
 .chart-title {
@@ -269,8 +245,6 @@ body {
    ESTILOS PARA LA PLANTILLA
    ============================================================================= */
 
-/* Botón flotante de configuración (eliminado) */
-
 /* Modal de configuración */
 .modal {
     display: none;
@@ -326,6 +300,12 @@ body {
     font-family: 'Georgia', serif;
 }
 
+.config-title {
+    color: #1B4F72;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
 .config-section label {
     display: block;
     margin-bottom: 5px;
@@ -376,6 +356,15 @@ body {
     transition: all 0.3s ease;
     display: inline-block;
     text-decoration: none;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
 }
 
 .btn:hover {
@@ -522,6 +511,10 @@ body {
         height: 500px !important;
         margin-bottom: 30px;
     }
+
+    .chart-frame {
+        min-height: 560px;
+    }
     
     .chart-title {
         font-size: 16px;
@@ -543,7 +536,6 @@ body {
         width: 95%;
         padding: 20px;
     }
-    
 }
 
 @media (max-width: 600px) {
@@ -640,6 +632,10 @@ body {
         height: 400px !important;
         border-radius: 4px;
     }
+
+    .chart-frame {
+        min-height: 420px;
+    }
     
     .chart-title {
         font-size: 14px;
@@ -665,7 +661,6 @@ body {
         width: 98%;
         padding: 15px;
     }
-    
 }
 
 @media (max-width: 360px) {

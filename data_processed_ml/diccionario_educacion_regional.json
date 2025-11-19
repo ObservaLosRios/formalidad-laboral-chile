@@ -1,5 +1,5 @@
 {
-  "archivo": "/Users/brunosanmartin/Documents/UACh/formalidad-informalidad-laboral-sector-chile/data_processed_ml/educacion_regional_tidy_20250825_021407.csv",
+  "archivo": "/Users/brunosanmartinnavarro/Documents/UACh/education-employment-analysis/data_processed_ml/educacion_regional_tidy_20251114_090314.csv",
   "diccionario": [
     {
       "col": "trimestre",

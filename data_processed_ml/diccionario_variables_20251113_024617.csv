@@ -1,0 +1,34 @@
+dataset,columna,dtype,n_null,%null,n_unique,ejemplo
+INF_OI_CHL14_clean.csv,DTI_CL_INDICADOR,object,0,0.0,2,INF_OCU_INF
+INF_OI_CHL14_clean.csv,Indicador,object,0,0.0,2,Ocupados informales (proyecciones base 2002)
+INF_OI_CHL14_clean.csv,DTI_CL_TRIMESTRE_MOVIL,object,0,0.0,81,2017-V08
+INF_OI_CHL14_clean.csv,Trimestre Móvil,object,0,0.0,81,2017 jul-sep
+INF_OI_CHL14_clean.csv,DTI_CL_REGION,object,0,0.0,1,CHL14
+INF_OI_CHL14_clean.csv,Región,object,0,0.0,1,Región de Los Ríos
+INF_OI_CHL14_clean.csv,DTI_CL_SEXO,object,0,0.0,3,_T
+INF_OI_CHL14_clean.csv,Sexo,object,0,0.0,3,Ambos sexos
+INF_OI_CHL14_clean.csv,Value,float64,0,0.0,327,70.2127914434201
+INF_OI_CHL14_clean.csv,Flag Codes,float64,327,100.0,0,
+INF_OI_CHL14_clean.csv,Flags,float64,327,100.0,0,
+INF_TOSI_CHL14_clean.csv,DTI_CL_INDICADOR,object,0,0.0,2,INF_TOSI
+INF_TOSI_CHL14_clean.csv,Indicador,object,0,0.0,2,Tasa de ocupación en el sector informal  (proyecciones base 2002)
+INF_TOSI_CHL14_clean.csv,DTI_CL_TRIMESTRE_MOVIL,object,0,0.0,81,2017-V08
+INF_TOSI_CHL14_clean.csv,Trimestre Móvil,object,0,0.0,81,2017 jul-sep
+INF_TOSI_CHL14_clean.csv,DTI_CL_REGION,object,0,0.0,1,CHL14
+INF_TOSI_CHL14_clean.csv,Región,object,0,0.0,1,Región de Los Ríos
+INF_TOSI_CHL14_clean.csv,DTI_CL_SEXO,object,0,0.0,3,_T
+INF_TOSI_CHL14_clean.csv,Sexo,object,0,0.0,3,Ambos sexos
+INF_TOSI_CHL14_clean.csv,Value,float64,0,0.0,327,22.4054578407436
+INF_TOSI_CHL14_clean.csv,Flag Codes,float64,327,100.0,0,
+INF_TOSI_CHL14_clean.csv,Flags,float64,327,100.0,0,
+INF_NOAGRO_CHL14_clean.csv,DTI_CL_INDICADOR,object,0,0.0,2,INF_TOI_NOAGRO
+INF_NOAGRO_CHL14_clean.csv,Indicador,object,0,0.0,2,Tasa de ocupación informal excluyendo al sector agropecuario (proyecciones base 2002)
+INF_NOAGRO_CHL14_clean.csv,DTI_CL_TRIMESTRE_MOVIL,object,0,0.0,81,2017-V08
+INF_NOAGRO_CHL14_clean.csv,Trimestre Móvil,object,0,0.0,81,2017 jul-sep
+INF_NOAGRO_CHL14_clean.csv,DTI_CL_REGION,object,0,0.0,1,CHL14
+INF_NOAGRO_CHL14_clean.csv,Región,object,0,0.0,1,Región de Los Ríos
+INF_NOAGRO_CHL14_clean.csv,DTI_CL_SEXO,object,0,0.0,3,_T
+INF_NOAGRO_CHL14_clean.csv,Sexo,object,0,0.0,3,Ambos sexos
+INF_NOAGRO_CHL14_clean.csv,Value,float64,0,0.0,327,34.6462839887114
+INF_NOAGRO_CHL14_clean.csv,Flag Codes,float64,327,100.0,0,
+INF_NOAGRO_CHL14_clean.csv,Flags,float64,327,100.0,0,

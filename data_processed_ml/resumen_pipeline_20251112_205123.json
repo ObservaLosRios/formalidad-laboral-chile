@@ -1,0 +1,22 @@
+{
+  "timestamp": "20251112_205123",
+  "seed": 42,
+  "datasets_cargados": [
+    "INF_OI_CHL14_clean.csv",
+    "INF_TOSI_CHL14_clean.csv",
+    "INF_NOAGRO_CHL14_clean.csv"
+  ],
+  "filas_merged": 243,
+  "columnas_merged": 5,
+  "nuevas_columnas_feature_engineering": [
+    "gap_noagro_sector_pp",
+    "tasa_informal_noagro_var_pct",
+    "tasa_informal_sector_var_pct"
+  ],
+  "artefactos": {
+    "scaled_dataset": "/Users/brunosanmartinnavarro/Documents/UACh/education-employment-analysis/data_processed_ml/merged_scaled_20251112_205123.csv",
+    "scaler": "/Users/brunosanmartinnavarro/Documents/UACh/education-employment-analysis/data_processed_ml/scaler_20251112_205123.pkl",
+    "ohe": "/Users/brunosanmartinnavarro/Documents/UACh/education-employment-analysis/data_processed_ml/ohe_DTI_CL_SEXO_20251112_205123.pkl"
+  },
+  "sklearn_disponible": true
+}
