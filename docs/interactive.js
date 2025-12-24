@@ -9,6 +9,12 @@ const TYPED_ARRAY_MAP = {
             u1: Uint8Array
         };
 
+        const RENDER_STATE = {
+            renderedSections: new Set(),
+            highcharts: Object.create(null),
+            highchartsThemeApplied: false
+        };
+
         function decodeTypedArrays(value) {
             if (Array.isArray(value)) {
                 for (let i = 0; i < value.length; i += 1) {
@@ -82,7 +88,251 @@ const TYPED_ARRAY_MAP = {
 }
         `);
 
+        function stripHtmlTags(value) {
+            if (!value) {
+                return '';
+            }
+            return String(value).replace(/<[^>]*>/g, '').trim();
+        }
+
+        function parsePlotlyIsoDateToUtcMs(value) {
+            if (!value) {
+                return null;
+            }
+            const raw = String(value);
+            const ymd = raw.slice(0, 10);
+            const parsed = Date.parse(`${ymd}T00:00:00Z`);
+            return Number.isFinite(parsed) ? parsed : null;
+        }
+
+        function formatUtcMsToYearMonthEs(utcMs) {
+            if (typeof utcMs !== 'number' || !Number.isFinite(utcMs)) {
+                return null;
+            }
+            const d = new Date(utcMs);
+            const year = d.getUTCFullYear();
+            const month = d.getUTCMonth();
+            const months = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+            const m = months[month] || String(month + 1).padStart(2, '0');
+            return `${m} ${year}`;
+        }
+
+        function getLatestPeriodUtcMsFromFigure(figure) {
+            const traces = Array.isArray(figure?.data) ? figure.data : [];
+            let maxMs = null;
+            for (const trace of traces) {
+                const xs = Array.isArray(trace?.x) ? trace.x : [];
+                for (const x of xs) {
+                    const ms = parsePlotlyIsoDateToUtcMs(x);
+                    if (ms === null) {
+                        continue;
+                    }
+                    if (maxMs === null || ms > maxMs) {
+                        maxMs = ms;
+                    }
+                }
+            }
+            return maxMs;
+        }
+
+        function getLatestPeriodLabelEs() {
+            try {
+                const figure = loadFigureFromBase64(
+                    FIGURES_BASE64.visualizacion3bis.data,
+                    FIGURES_BASE64.visualizacion3bis.layout
+                );
+                const ms = getLatestPeriodUtcMsFromFigure(figure);
+                return formatUtcMsToYearMonthEs(ms);
+            } catch (err) {
+                return null;
+            }
+        }
+
+        function appendLatestPeriodToTitle(title, latestLabelEs) {
+            const rawTitle = String(title || '').trim();
+            if (!rawTitle) {
+                return rawTitle;
+            }
+            if (!latestLabelEs) {
+                return rawTitle;
+            }
+            const marker = /\b(Ú|U)ltimo\s+per(í|i)odo\s+disponible\b/i;
+            if (marker.test(rawTitle) && !rawTitle.includes('(')) {
+                return rawTitle.replace(marker, (m) => `${m} (${latestLabelEs})`);
+            }
+            if (marker.test(rawTitle) && rawTitle.includes(`(${latestLabelEs})`)) {
+                return rawTitle;
+            }
+            return rawTitle;
+        }
+
+        function ensureHighchartsTheme() {
+            if (RENDER_STATE.highchartsThemeApplied) {
+                return;
+            }
+            if (typeof Highcharts === 'undefined') {
+                return;
+            }
+
+            // Make export/table show the same values the user sees on the chart
+            // (Highcharts export-data defaults to raw values and may show timestamps / extra decimals).
+            if (!Highcharts.__uachExportFormattingPatched) {
+                Highcharts.__uachExportFormattingPatched = true;
+                Highcharts.wrap(Highcharts.Chart.prototype, 'getDataRows', function (proceed, multiLevelHeaders) {
+                    const rows = proceed.call(this, multiLevelHeaders);
+                    if (!Array.isArray(rows) || rows.length <= 1) {
+                        return rows;
+                    }
+
+                    const hasDatetimeXAxis = Array.isArray(this.xAxis) && this.xAxis.some((axis) => axis && axis.options && axis.options.type === 'datetime');
+                    const yAxisTitle = (this.yAxis?.[0]?.axisTitle?.textStr || this.yAxis?.[0]?.options?.title?.text || '').toString();
+                    const isPercentChart = /porcentaje|%/i.test(yAxisTitle);
+                    const decimals = isPercentChart ? 1 : 0;
+
+                    for (let i = 1; i < rows.length; i += 1) {
+                        const row = rows[i];
+                        if (!Array.isArray(row)) {
+                            continue;
+                        }
+
+                        // First column is X
+                        if (hasDatetimeXAxis && typeof row[0] === 'number' && Number.isFinite(row[0])) {
+                            row[0] = Highcharts.dateFormat('%Y-%m', row[0]);
+                        }
+
+                        // Remaining columns are series values
+                        for (let j = 1; j < row.length; j += 1) {
+                            if (typeof row[j] === 'number' && Number.isFinite(row[j])) {
+                                row[j] = Number(row[j].toFixed(decimals));
+                            }
+                        }
+                    }
+
+                    return rows;
+                });
+            }
+
+            Highcharts.setOptions({
+                time: {
+                    useUTC: true
+                },
+                chart: {
+                    backgroundColor: '#f7f2ea',
+                    style: {
+                        fontFamily: 'Georgia, serif',
+                        color: '#1e1b18'
+                    }
+                },
+                title: {
+                    style: {
+                        fontFamily: 'Georgia, serif',
+                        fontSize: '24px',
+                        fontWeight: 'normal',
+                        color: '#1e1b18'
+                    }
+                },
+                subtitle: {
+                    style: {
+                        fontFamily: 'Georgia, serif',
+                        fontSize: '14px',
+                        fontWeight: 'normal',
+                        color: '#4a4338'
+                    }
+                },
+                caption: {
+                    style: {
+                        fontFamily: 'Georgia, serif',
+                        fontSize: '11px',
+                        color: '#6e6252'
+                    }
+                },
+                xAxis: {
+                    gridLineColor: '#d9d3c5',
+                    lineColor: '#d9d3c5',
+                    tickColor: '#d9d3c5',
+                    labels: {
+                        style: {
+                            fontFamily: 'Georgia, serif',
+                            fontSize: '12px',
+                            color: '#1e1b18'
+                        }
+                    },
+                    title: {
+                        style: {
+                            fontFamily: 'Georgia, serif',
+                            fontSize: '14px',
+                            color: '#1e1b18'
+                        }
+                    }
+                },
+                yAxis: {
+                    gridLineColor: '#d9d3c5',
+                    labels: {
+                        style: {
+                            fontFamily: 'Georgia, serif',
+                            fontSize: '12px',
+                            color: '#1e1b18'
+                        }
+                    },
+                    title: {
+                        style: {
+                            fontFamily: 'Georgia, serif',
+                            fontSize: '14px',
+                            color: '#1e1b18'
+                        }
+                    }
+                },
+                legend: {
+                    itemStyle: {
+                        fontFamily: 'Georgia, serif',
+                        fontSize: '12px',
+                        color: '#1e1b18'
+                    },
+                    itemHoverStyle: {
+                        color: '#1e1b18'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: '#ffffff',
+                    borderColor: '#333333',
+                    style: {
+                        fontFamily: 'Georgia, serif',
+                        color: '#000000'
+                    }
+                },
+                plotOptions: {
+                    series: {
+                        marker: {
+                            lineColor: '#ffffff',
+                            lineWidth: 1.2
+                        }
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                exporting: {
+                    enabled: true,
+                    csv: {
+                        dateFormat: '%Y-%m',
+                        decimalPoint: '.',
+                        itemDelimiter: ',',
+                        lineDelimiter: '\n'
+                    }
+                }
+            });
+
+            RENDER_STATE.highchartsThemeApplied = true;
+        }
+
         function renderVisualizacion1() {
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
             const fechas = [
                 "2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01",
                 "2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01",
@@ -115,164 +365,487 @@ const TYPED_ARRAY_MAP = {
                 16.7639,17.4855,16.3636,17.9086,20.4965,20.2904,18.9020,17.7207,18.1321
             ];
 
-            const highlightIndex = valores.reduce((maxIdx, val, idx, arr) => (val > arr[maxIdx] ? idx : maxIdx), 0);
+            const data = fechas
+                .map((dateStr, idx) => [Date.parse(`${dateStr}T00:00:00Z`), valores[idx]])
+                .filter((pair) => Number.isFinite(pair[0]) && Number.isFinite(pair[1]));
 
-            const tooltipTemplate = "<span style='background-color:#ffffff;border:1px solid #333333;padding:6px 10px;display:inline-block;color:#000000;'><b>%{x|%Y %b}</b><br>Tasa de ocupación informal (%): %{y:.1f}%</span><extra></extra>";
+            const chart = Highcharts.chart('chart-visualizacion1', {
 
-            const traceLinea = {
-                x: fechas,
-                y: valores,
-                mode: 'lines+markers',
-                line: {color: '#0a9396', width: 3},
-                marker: {color: '#0a9396', size: 8, line: {color: '#ffffff', width: 1.2}},
-                hovertemplate: tooltipTemplate,
-                showlegend: false
-            };
-
-            const tracePico = {
-                x: [fechas[highlightIndex]],
-                y: [valores[highlightIndex]],
-                mode: 'markers',
-                marker: {color: '#d62828', size: 12, symbol: 'diamond', line: {color: '#ffffff', width: 1.5}},
-                hovertemplate: '<b>Pico</b><br>Tasa de ocupación informal (%): %{y:.1f}%<extra></extra>',
-                showlegend: false
-            };
-
-            const layout = {
                 title: {
                     text: '<b>Línea temporal: Tasa de ocupación informal (2017-2024)</b>',
-                    font: {family: 'Georgia, serif', size: 24, color: '#1e1b18'},
-                    x: 0.05,
-                    y: 0.95
+                    useHTML: true,
+                    align: 'left'
                 },
-                font: {family: 'Georgia, serif', size: 15, color: '#1e1b18'},
-                paper_bgcolor: '#f7f2ea',
-                plot_bgcolor: '#f7f2ea',
-                width: 1200,
-                height: 620,
-                margin: {l: 120, r: 120, t: 110, b: 100},
-                hoverlabel: {bgcolor: '#ffffff', bordercolor: '#333333', font: {family: 'Georgia, serif', color: '#000000'}},
-                hovermode: 'x unified',
-                hoverdistance: 50,
-                xaxis: {
-                    title: {text: 'Trimestre móvil', font: {family: 'Georgia, serif', size: 14, color: '#1e1b18'}},
-                    showgrid: true,
-                    gridcolor: '#d9d3c5',
-                    griddash: 'dot',
-                    zeroline: false,
-                    type: 'date',
-                    tickformat: '%Y',
-                    tickfont: {family: 'Georgia, serif', size: 12, color: '#1e1b18'},
-                    showspikes: true,
-                    spikemode: 'across',
-                    spikecolor: 'rgba(120, 120, 120, 0.6)',
-                    spikethickness: 1.3,
-                    spikedash: 'solid',
-                    spikesnap: 'cursor',
-                    hoverformat: ' '
-                },
-                yaxis: {
-                    title: {text: 'Porcentaje', font: {family: 'Georgia, serif', size: 14, color: '#1e1b18'}},
-                    showgrid: true,
-                    gridcolor: '#d9d3c5',
-                    griddash: 'dot',
-                    zeroline: false,
-                    tickfont: {family: 'Georgia, serif', size: 12, color: '#1e1b18'},
-                    showspikes: false
-                },
-                shapes: [
-                    {
-                        type: 'line',
-                        x0: '2020-01-01',
-                        x1: '2020-01-01',
-                        y0: 0,
-                        y1: 1,
-                        yref: 'paper',
-                        line: {color: '#e11d48', width: 2, dash: 'dash'}
-                    }
-                ],
-                annotations: [
-                    {
-                        text: '<b>COVID-19</b>',
-                        x: '2020-01-01',
-                        y: Math.max(...valores),
-                        showarrow: false,
-                        font: {family: 'Georgia, serif', size: 10, color: '#e11d48'},
-                        bgcolor: 'rgba(255,255,255,0.85)',
-                        bordercolor: '#e11d48',
-                        borderwidth: 1
-                    },
-                    {
-                        text: 'Los Ríos, ENE 2017 - MAY 2024',
-                        x: 0,
-                        y: 1.05,
-                        xref: 'paper',
-                        yref: 'paper',
-                        showarrow: false,
-                        font: {family: 'Georgia, serif', size: 14, color: '#4a4338'}
-                    },
-                    {
-                        text: 'Fuente: Encuesta Nacional de Empleo (INE)',
-                        x: 0,
-                        y: -0.18,
-                        xref: 'paper',
-                        yref: 'paper',
-                        showarrow: false,
-                        font: {family: 'Georgia, serif', size: 11, color: '#6e6252'}
-                    }
-                ]
-            };
 
-            Plotly.newPlot('chart-visualizacion1', [traceLinea, tracePico], layout, {displayModeBar: false, responsive: true});
+                subtitle: {
+                    text: null
+                },
+
+                caption: {
+                    text: 'Fuente: Encuesta Nacional de Empleo (INE)'
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'Porcentaje (%)'
+                    },
+                    plotLines: [{
+                        value: Date.UTC(2020, 0, 1),
+                        color: '#e11d48',
+                        width: 2,
+                        dashStyle: 'Dash',
+                        zIndex: 3
+                    }]
+                },
+
+                xAxis: {
+                    type: 'datetime',
+                    tickInterval: 365 * 24 * 3600 * 1000,
+                    labels: {
+                        format: '{value:%Y}'
+                    },
+                    accessibility: {
+                        rangeDescription: 'Rango: 2017 a 2024'
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    xDateFormat: '%Y %b',
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: 'Porcentaje: <b>{point.y:.1f}%</b>'
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            enabled: false,
+                            connectorAllowed: false
+                        },
+                        lineWidth: 3,
+                        color: '#0a9396',
+                        marker: {
+                            enabled: true,
+                            radius: 4,
+                            symbol: 'circle',
+                            fillColor: '#0a9396'
+                        },
+                        showInLegend: false
+                    }
+                },
+
+                series: [{
+                    name: '',
+                    data
+                }],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                enabled: false
+                            }
+                        }
+                    }]
+                }
+
+            });
+
+            RENDER_STATE.highcharts.visualizacion1 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion1');
         }
 
 
         function renderVisualizacion3bis() {
+            if (RENDER_STATE.renderedSections.has('visualizacion3bis')) {
+                return;
+            }
+
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
             const figure = loadFigureFromBase64(
                 FIGURES_BASE64.visualizacion3bis.data,
                 FIGURES_BASE64.visualizacion3bis.layout
             );
-            Plotly.newPlot('chart-visualizacion3bis', figure.data, figure.layout, {responsive: true, displayModeBar: false});
+
+            const primaryTrace = Array.isArray(figure?.data)
+                ? figure.data.find((trace) => trace && Array.isArray(trace.x) && Array.isArray(trace.y))
+                : null;
+
+            const xValues = primaryTrace?.x || [];
+            const yValues = primaryTrace?.y || [];
+
+            const seriesData = xValues
+                .map((x, idx) => [parsePlotlyIsoDateToUtcMs(x), Number(yValues[idx])])
+                .filter(([ts, val]) => Number.isFinite(ts) && Number.isFinite(val));
+
+            const titleFromLayout = stripHtmlTags(figure?.layout?.title?.text);
+            const titleText = titleFromLayout || 'Tasa informal no agro';
+
+            const sourceAnnotation = Array.isArray(figure?.layout?.annotations)
+                ? figure.layout.annotations.find((a) => typeof a?.text === 'string' && a.text.includes('Fuente:'))
+                : null;
+            const sourceText = stripHtmlTags(sourceAnnotation?.text) || 'Fuente: Encuesta Nacional de Empleo (INE)';
+
+            const chart = Highcharts.chart('chart-visualizacion3bis', {
+                title: {
+                    text: `<b>${titleText}</b>`,
+                    useHTML: true,
+                    align: 'left'
+                },
+
+                subtitle: {
+                    text: null
+                },
+
+                caption: {
+                    text: sourceText
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'Porcentaje (%)'
+                    },
+                    plotLines: [{
+                        value: Date.UTC(2020, 0, 1),
+                        color: '#e11d48',
+                        width: 2,
+                        dashStyle: 'Dash',
+                        zIndex: 3
+                    }]
+                },
+
+                xAxis: {
+                    type: 'datetime',
+                    tickInterval: 365 * 24 * 3600 * 1000,
+                    labels: {
+                        format: '{value:%Y}'
+                    },
+                    accessibility: {
+                        rangeDescription: 'Rango: 2017 a 2024'
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    xDateFormat: '%Y %b',
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: 'Porcentaje: <b>{point.y:.1f}%</b>'
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            enabled: false,
+                            connectorAllowed: false
+                        },
+                        lineWidth: 3,
+                        color: '#0a9396',
+                        marker: {
+                            enabled: true,
+                            radius: 4,
+                            symbol: 'circle',
+                            fillColor: '#0a9396'
+                        },
+                        showInLegend: false
+                    }
+                },
+
+                series: [{
+                    name: '',
+                    data: seriesData
+                }],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                enabled: false
+                            }
+                        }
+                    }]
+                }
+
+            });
+
+            RENDER_STATE.highcharts.visualizacion3bis = chart;
+            RENDER_STATE.renderedSections.add('visualizacion3bis');
         }
 
 
 
         function renderVisualizacion15() {
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
             const figure = loadFigureFromBase64(
                 FIGURES_BASE64.visualizacion15.data,
                 FIGURES_BASE64.visualizacion15.layout
             );
-            Plotly.newPlot('chart-visualizacion15', figure.data, figure.layout, {responsive: true, displayModeBar: false});
+
+            const traces = Array.isArray(figure?.data) ? figure.data : [];
+            const categories = Array.isArray(traces?.[0]?.x) ? traces[0].x.map((v) => String(v)) : [];
+            const latestPeriodLabelEs = getLatestPeriodLabelEs();
+            const titleFromLayout = appendLatestPeriodToTitle(
+                stripHtmlTags(figure?.layout?.title?.text),
+                latestPeriodLabelEs
+            );
+
+            const series = traces
+                .filter((trace) => trace && Array.isArray(trace.y))
+                .map((trace) => ({
+                    name: String(trace.name || trace.legendgroup || '').trim(),
+                    data: trace.y.map((v) => Number(v)),
+                    color: trace?.marker?.color
+                }));
+
+            const chart = Highcharts.chart('chart-visualizacion15', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: titleFromLayout,
+                    align: 'left'
+                },
+                subtitle: {
+                    text: null
+                },
+                xAxis: {
+                    categories,
+                    crosshair: true,
+                    accessibility: {
+                        description: 'Nivel educativo'
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Ocupados (personas)'
+                    }
+                },
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                },
+                tooltip: {
+                    shared: true,
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: '<span style="color:{series.color}">●</span> {series.name}: <b>{point.y:,.0f}</b><br/>'
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series
+            });
+
+            RENDER_STATE.highcharts.visualizacion15 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion15');
         }
 
 
 
         function renderVisualizacion16() {
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
             const figure = loadFigureFromBase64(
                 FIGURES_BASE64.visualizacion16.data,
                 FIGURES_BASE64.visualizacion16.layout
             );
-            Plotly.newPlot('chart-visualizacion16', figure.data, figure.layout, {responsive: true, displayModeBar: false});
+
+            const traces = Array.isArray(figure?.data) ? figure.data : [];
+            const categories = Array.isArray(traces?.[0]?.x) ? traces[0].x.map((v) => String(v)) : [];
+            const latestPeriodLabelEs = getLatestPeriodLabelEs();
+            const titleFromLayout = appendLatestPeriodToTitle(
+                stripHtmlTags(figure?.layout?.title?.text),
+                latestPeriodLabelEs
+            );
+
+            const series = traces
+                .filter((trace) => trace && Array.isArray(trace.y))
+                .map((trace) => ({
+                    name: String(trace.name || trace.legendgroup || '').trim(),
+                    data: trace.y.map((v) => Number(v)),
+                    color: trace?.marker?.color
+                }));
+
+            const chart = Highcharts.chart('chart-visualizacion16', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: titleFromLayout,
+                    align: 'left'
+                },
+                subtitle: {
+                    text: null
+                },
+                xAxis: {
+                    categories,
+                    crosshair: true,
+                    accessibility: {
+                        description: 'Nivel educativo'
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Ocupados informales (personas)'
+                    }
+                },
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                },
+                tooltip: {
+                    shared: true,
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: '<span style="color:{series.color}">●</span> {series.name}: <b>{point.y:,.0f}</b><br/>'
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series
+            });
+
+            RENDER_STATE.highcharts.visualizacion16 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion16');
         }
 
 
 
         function renderVisualizacion17() {
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
             const figure = loadFigureFromBase64(
                 FIGURES_BASE64.visualizacion17.data,
                 FIGURES_BASE64.visualizacion17.layout
             );
-            Plotly.newPlot('chart-visualizacion17', figure.data, figure.layout, {responsive: true, displayModeBar: false});
+
+            const traces = Array.isArray(figure?.data) ? figure.data : [];
+            const categories = Array.isArray(traces?.[0]?.y) ? traces[0].y.map((v) => String(v)) : [];
+            const latestPeriodLabelEs = getLatestPeriodLabelEs();
+            const titleFromLayout = appendLatestPeriodToTitle(
+                stripHtmlTags(figure?.layout?.title?.text),
+                latestPeriodLabelEs
+            );
+
+            const series = traces
+                .filter((trace) => trace && Array.isArray(trace.x))
+                .map((trace) => ({
+                    name: String(trace.name || trace.legendgroup || '').trim(),
+                    data: trace.x.map((v) => Number(v)),
+                    color: trace?.marker?.color
+                }));
+
+            const chart = Highcharts.chart('chart-visualizacion17', {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: titleFromLayout,
+                    align: 'left'
+                },
+                subtitle: {
+                    text: null
+                },
+                xAxis: {
+                    categories,
+                    title: {
+                        text: null
+                    },
+                    gridLineWidth: 1,
+                    lineWidth: 0
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Ocupados formales (personas)',
+                        align: 'high'
+                    },
+                    labels: {
+                        overflow: 'justify'
+                    },
+                    gridLineWidth: 0
+                },
+                tooltip: {
+                    shared: true,
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: '<span style="color:{series.color}">●</span> {series.name}: <b>{point.y:,.0f}</b><br/>'
+                },
+                plotOptions: {
+                    bar: {
+                        borderRadius: '50%',
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.y:,.0f}'
+                        },
+                        groupPadding: 0.1
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    x: -40,
+                    y: 80,
+                    floating: true,
+                    borderWidth: 1,
+                    backgroundColor: 'var(--highcharts-background-color, #ffffff)',
+                    shadow: true
+                },
+                credits: {
+                    enabled: false
+                },
+                series
+            });
+
+            RENDER_STATE.highcharts.visualizacion17 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion17');
         }
 
 
 function renderAllVisualizations() {
-    if (typeof Plotly === 'undefined') {
-        console.error('Plotly.js no está disponible.');
-        return;
-    }
     renderVisualizacion1();
-    renderVisualizacion3bis();
+
     renderVisualizacion15();
     renderVisualizacion16();
     renderVisualizacion17();
@@ -281,6 +854,49 @@ function renderAllVisualizations() {
 function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
+
+    const ensureSectionRendered = (targetId) => {
+        if (!targetId) {
+            return;
+        }
+        if (targetId === 'visualizacion3bis') {
+            renderVisualizacion3bis();
+            const chart = RENDER_STATE.highcharts.visualizacion3bis;
+            if (chart && typeof chart.reflow === 'function') {
+                chart.reflow();
+            }
+        }
+        if (targetId === 'visualizacion1') {
+            const chart = RENDER_STATE.highcharts.visualizacion1;
+            if (chart && typeof chart.reflow === 'function') {
+                chart.reflow();
+            }
+        }
+
+        if (targetId === 'visualizacion15') {
+            renderVisualizacion15();
+            const chart = RENDER_STATE.highcharts.visualizacion15;
+            if (chart && typeof chart.reflow === 'function') {
+                chart.reflow();
+            }
+        }
+
+        if (targetId === 'visualizacion16') {
+            renderVisualizacion16();
+            const chart = RENDER_STATE.highcharts.visualizacion16;
+            if (chart && typeof chart.reflow === 'function') {
+                chart.reflow();
+            }
+        }
+
+        if (targetId === 'visualizacion17') {
+            renderVisualizacion17();
+            const chart = RENDER_STATE.highcharts.visualizacion17;
+            if (chart && typeof chart.reflow === 'function') {
+                chart.reflow();
+            }
+        }
+    };
 
     const setActiveSection = (targetId) => {
         if (!targetId) {
@@ -294,6 +910,8 @@ function initNavigation() {
         navLinks.forEach((link) => {
             link.classList.toggle('active', link.dataset.section === targetId);
         });
+
+        ensureSectionRendered(targetId);
     };
 
     navLinks.forEach((link) => {
