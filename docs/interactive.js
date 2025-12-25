@@ -372,9 +372,7 @@ const TYPED_ARRAY_MAP = {
             const chart = Highcharts.chart('chart-visualizacion1', {
 
                 title: {
-                    text: '<b>Línea temporal: Tasa de ocupación informal (2017-2024)</b>',
-                    useHTML: true,
-                    align: 'left'
+                    text: null
                 },
 
                 subtitle: {
@@ -500,9 +498,7 @@ const TYPED_ARRAY_MAP = {
 
             const chart = Highcharts.chart('chart-visualizacion3bis', {
                 title: {
-                    text: `<b>${titleText}</b>`,
-                    useHTML: true,
-                    align: 'left'
+                    text: null
                 },
 
                 subtitle: {
@@ -625,8 +621,7 @@ const TYPED_ARRAY_MAP = {
                     type: 'column'
                 },
                 title: {
-                    text: titleFromLayout,
-                    align: 'left'
+                    text: null
                 },
                 subtitle: {
                     text: null
@@ -703,8 +698,7 @@ const TYPED_ARRAY_MAP = {
                     type: 'column'
                 },
                 title: {
-                    text: titleFromLayout,
-                    align: 'left'
+                    text: null
                 },
                 subtitle: {
                     text: null
@@ -781,8 +775,7 @@ const TYPED_ARRAY_MAP = {
                     type: 'bar'
                 },
                 title: {
-                    text: titleFromLayout,
-                    align: 'left'
+                    text: null
                 },
                 subtitle: {
                     text: null
