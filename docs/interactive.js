@@ -335,6 +335,138 @@ const TYPED_ARRAY_MAP = {
 
             const fechas = [
                 "2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01",
+                "2018-12-01","2018-01-01","2018-02-01","2018-03-01","2018-04-01",
+                "2018-05-01","2018-06-01","2018-07-01","2018-08-01","2018-09-01",
+                "2018-10-01","2018-11-01","2019-12-01","2019-01-01","2019-02-01",
+                "2019-03-01","2019-04-01","2019-05-01","2019-06-01","2019-07-01",
+                "2019-08-01","2019-09-01","2019-10-01","2019-11-01","2020-12-01",
+                "2020-01-01","2020-02-01","2020-03-01","2020-04-01","2020-05-01",
+                "2020-06-01","2020-07-01","2020-08-01","2020-09-01","2020-10-01",
+                "2020-11-01","2021-12-01","2021-01-01","2021-02-01","2021-03-01",
+                "2021-04-01","2021-05-01","2021-06-01","2021-07-01","2021-08-01",
+                "2021-09-01","2021-10-01","2021-11-01","2022-12-01","2022-01-01",
+                "2022-02-01","2022-03-01","2022-04-01","2022-05-01","2022-06-01",
+                "2022-07-01","2022-08-01","2022-09-01","2022-10-01","2022-11-01",
+                "2023-12-01","2023-01-01","2023-02-01","2023-03-01","2023-04-01",
+                "2023-05-01","2023-06-01","2023-07-01","2023-08-01","2023-09-01",
+                "2023-10-01","2023-11-01","2024-12-01","2024-01-01","2024-02-01",
+                "2024-03-01"
+            ];
+
+            const valores = [
+                36.0,36.5,35.4,34.8,34.7,34.7,36.3,37.3,37.7,37.5,37.0,36.6,36.0,35.1,
+                36.1,36.2,37.0,36.3,36.8,35.7,36.2,36.1,36.1,36.2,35.1,35.5,35.9,36.3,
+                35.3,35.0,34.3,33.6,31.5,31.2,32.3,33.4,35.4,35.5,34.6,34.0,34.1,34.1,
+                34.5,33.8,32.1,31.8,33.0,33.5,31.5,32.5,35.5,34.7,35.2,32.7,33.9,33.9,
+                32.6,32.7,32.6,32.3,33.0,32.4,32.3,32.3,33.0,36.0,35.1,35.5,33.6,33.1,
+                33.3,33.3,34.4,33.1,32.5,31.2,32.2,32.9,35.0,33.6,32.9
+            ];
+
+            const data = fechas
+                .map((dateStr, idx) => [Date.parse(`${dateStr}T00:00:00Z`), valores[idx]])
+                .filter((pair) => Number.isFinite(pair[0]) && Number.isFinite(pair[1]))
+                .sort((a, b) => a[0] - b[0]);
+
+            const chart = Highcharts.chart('chart-visualizacion1', {
+
+                title: {
+                    text: null
+                },
+
+                subtitle: {
+                    text: null
+                },
+
+                caption: {
+                    text: 'Fuente: Encuesta Nacional de Empleo (INE)'
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'Porcentaje (%)'
+                    },
+                    plotLines: [{
+                        value: Date.UTC(2020, 0, 1),
+                        color: '#e11d48',
+                        width: 2,
+                        dashStyle: 'Dash',
+                        zIndex: 3
+                    }]
+                },
+
+                xAxis: {
+                    type: 'datetime',
+                    tickInterval: 365 * 24 * 3600 * 1000,
+                    labels: {
+                        format: '{value:%Y}'
+                    },
+                    accessibility: {
+                        rangeDescription: 'Rango: 2017 a 2024'
+                    }
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                tooltip: {
+                    xDateFormat: '%Y %b',
+                    headerFormat: '<span style="font-weight:600">{point.key}</span><br/>',
+                    pointFormat: 'Porcentaje: <b>{point.y:.1f}%</b>'
+                },
+
+                plotOptions: {
+                    series: {
+                        label: {
+                            enabled: false,
+                            connectorAllowed: false
+                        },
+                        lineWidth: 3,
+                        color: '#dc2626',
+                        marker: {
+                            enabled: true,
+                            radius: 4,
+                            symbol: 'circle',
+                            fillColor: '#dc2626'
+                        },
+                        showInLegend: false
+                    }
+                },
+
+                series: [{
+                    name: '',
+                    data
+                }],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                enabled: false
+                            }
+                        }
+                    }]
+                }
+
+            });
+
+            RENDER_STATE.highcharts.visualizacion1 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion1');
+        }
+
+        function renderVisualizacion2() {
+            if (typeof Highcharts === 'undefined') {
+                console.error('Highcharts no está disponible.');
+                return;
+            }
+
+            ensureHighchartsTheme();
+
+            const fechas = [
+                "2017-07-01","2017-08-01","2017-09-01","2017-10-01","2017-11-01",
                 "2018-01-01","2018-02-01","2018-03-01","2018-04-01","2018-05-01",
                 "2018-06-01","2018-07-01","2018-08-01","2018-09-01","2018-10-01",
                 "2018-11-01","2018-12-01","2019-01-01","2019-02-01","2019-03-01",
@@ -369,7 +501,7 @@ const TYPED_ARRAY_MAP = {
                 .map((dateStr, idx) => [Date.parse(`${dateStr}T00:00:00Z`), valores[idx]])
                 .filter((pair) => Number.isFinite(pair[0]) && Number.isFinite(pair[1]));
 
-            const chart = Highcharts.chart('chart-visualizacion1', {
+            const chart = Highcharts.chart('chart-visualizacion2', {
 
                 title: {
                     text: null
@@ -455,8 +587,8 @@ const TYPED_ARRAY_MAP = {
 
             });
 
-            RENDER_STATE.highcharts.visualizacion1 = chart;
-            RENDER_STATE.renderedSections.add('visualizacion1');
+            RENDER_STATE.highcharts.visualizacion2 = chart;
+            RENDER_STATE.renderedSections.add('visualizacion2');
         }
 
 
@@ -838,10 +970,7 @@ const TYPED_ARRAY_MAP = {
 
 function renderAllVisualizations() {
     renderVisualizacion1();
-
-    renderVisualizacion15();
-    renderVisualizacion16();
-    renderVisualizacion17();
+    renderVisualizacion2();
 }
 
 function initNavigation() {
@@ -866,29 +995,13 @@ function initNavigation() {
             }
         }
 
-        if (targetId === 'visualizacion15') {
-            renderVisualizacion15();
-            const chart = RENDER_STATE.highcharts.visualizacion15;
+        if (targetId === 'visualizacion2') {
+            const chart = RENDER_STATE.highcharts.visualizacion2;
             if (chart && typeof chart.reflow === 'function') {
                 chart.reflow();
             }
         }
 
-        if (targetId === 'visualizacion16') {
-            renderVisualizacion16();
-            const chart = RENDER_STATE.highcharts.visualizacion16;
-            if (chart && typeof chart.reflow === 'function') {
-                chart.reflow();
-            }
-        }
-
-        if (targetId === 'visualizacion17') {
-            renderVisualizacion17();
-            const chart = RENDER_STATE.highcharts.visualizacion17;
-            if (chart && typeof chart.reflow === 'function') {
-                chart.reflow();
-            }
-        }
     };
 
     const setActiveSection = (targetId) => {
